@@ -15,7 +15,11 @@ What is count of records for the 2024 Yellow Taxi Data?
 * 20,332,093
 * 85,431,289
 
-*** Answer ***
+### Answer
+20,332,093
+
+**Query used:**
+`SELECT count(*) FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata`
 
 ## Question 2:
 Write a query to count the distinct number of PULocationIDs for the entire dataset on both the tables.
@@ -26,12 +30,12 @@ What is the estimated amount of data that will be read when this query is execut
 * 2.14 GB for the External Table and 0MB for the Materialized Table
 * 0 MB for the External Table and 0MB for the Materialized Table
 
-*** Answer ***
+### Answer
 
 ## Question 3:
 
 
-*** Answer ***
+### Answer
 
 ## Question 4:
 How many records have a fare_amount of 0?
@@ -41,7 +45,7 @@ How many records have a fare_amount of 0?
 20,188,016
 8,333
 
-*** Answer ***
+### Answer
 
 ## Question 5:
 What is the best strategy to make an optimized table in Big Query if your query will always filter based on tpep_dropoff_datetime and order the results by VendorID (Create a new table with this strategy)
@@ -51,7 +55,7 @@ What is the best strategy to make an optimized table in Big Query if your query 
 * Cluster on tpep_dropoff_datetime Partition by VendorID
 * Partition by tpep_dropoff_datetime and Partition by VendorID
 
-*** Answer ***
+### Answer
 
 ## Question 6:
 Write a query to retrieve the distinct VendorIDs between tpep_dropoff_datetime 2024-03-01 and 2024-03-15 (inclusive)
@@ -65,7 +69,7 @@ Choose the answer which most closely matches.
 * 5.87 MB for non-partitioned table and 0 MB for the partitioned table
 * 310.31 MB for non-partitioned table and 285.64 MB for the partitioned table
 
-*** Answer ***
+### Answer
 
 ## Question 7:
 Where is the data stored in the External Table you created?
@@ -75,7 +79,7 @@ Where is the data stored in the External Table you created?
 * GCP Bucket
 * Big Table
 
-*** Answer ***
+### Answer
 
 ## Question 8:
 It is best practice in Big Query to always cluster your data:
@@ -83,4 +87,4 @@ It is best practice in Big Query to always cluster your data:
 * True
 * False
 
-*** Answer ***
+### Answer
