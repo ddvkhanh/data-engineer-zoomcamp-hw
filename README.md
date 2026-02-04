@@ -72,12 +72,18 @@ Why are the estimated number of Bytes different?
 ## Question 4:
 How many records have a fare_amount of 0?
 
-128,210
-546,578
-20,188,016
-8,333
+* 128,210
+* 546,578
+* 20,188,016
+* 8,333
 
 ### Answer
+**8,333**
+
+**Query used:**
+`SELECT count(*)
+from `bigquery-kat.ny_taxi_2024.yellow_tripdata`
+where fare_amount =0`
 
 ## Question 5:
 What is the best strategy to make an optimized table in Big Query if your query will always filter based on tpep_dropoff_datetime and order the results by VendorID (Create a new table with this strategy)
@@ -88,6 +94,14 @@ What is the best strategy to make an optimized table in Big Query if your query 
 * Partition by tpep_dropoff_datetime and Partition by VendorID
 
 ### Answer
+**Partition by tpep_dropoff_datetime and Cluster on VendorID**
+
+**Query used:**
+`CREATE OR REPLACE TABLE `bigquery-kat.ny_taxi_2024.yellow_tripdata_partitioned_clustered`
+PARTITION BY DATE(tpep_dropoff_datetime)
+CLUSTER BY VendorID AS
+SELECT * FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata`;`
+
 
 ## Question 6:
 Write a query to retrieve the distinct VendorIDs between tpep_dropoff_datetime 2024-03-01 and 2024-03-15 (inclusive)
@@ -102,6 +116,16 @@ Choose the answer which most closely matches.
 * 310.31 MB for non-partitioned table and 285.64 MB for the partitioned table
 
 ### Answer
+***310.24 MB for non-partitioned table and 26.84 MB for the partitioned table**
+
+**Query used**
+`SELECT distinct(VendorID) as trips
+FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata_partitioned_clustered`
+WHERE DATE(tpep_dropoff_datetime) BETWEEN '2024-03-01' AND '2024-03-15'`
+
+`SELECT distinct(VendorID) as trips
+FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata`
+WHERE DATE(tpep_dropoff_datetime) BETWEEN '2024-03-01' AND '2024-03-15'`
 
 ## Question 7:
 Where is the data stored in the External Table you created?
