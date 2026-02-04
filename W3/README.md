@@ -8,17 +8,18 @@
 4. From Big Query, Set up dataset (ny_taxi_2024) and create an external table (yellow_tripdata) that points to GCS and file name match wild card yellow_tripdata_2024*.parquet
 This means BigQuery does not use the data but fetch directly from GCS.
 
-`CREATE OR REPLACE EXTERNAL TABLE `bigquery-kat.ny_taxi_2024.yellow_tripdata_ext`
+```CREATE OR REPLACE EXTERNAL TABLE `` `bigquery-kat.ny_taxi_2024.yellow_tripdata_ext` ``
 OPTIONS (
   format = 'PARQUET',
   uris = ['gs://bigquery-kat/yellow_tripdata_2024-*.parquet']
-);`
+);```
+
 5. Create a regular table
 Purpose: Copy data from the external table into BigQuery storage.
 
-`CREATE or REPLACE TABLE `bigquery-kat.ny_taxi_2024.yellow_tripdata`
+```CREATE or REPLACE TABLE `` `bigquery-kat.ny_taxi_2024.yellow_tripdata` ``
 AS
-SELECT * FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata_ext``
+SELECT * FROM `` `bigquery-kat.ny_taxi_2024.yellow_tripdata_ext` `` ```
 
 ## Question 1:
 What is count of records for the 2024 Yellow Taxi Data?
@@ -28,10 +29,10 @@ What is count of records for the 2024 Yellow Taxi Data?
 * 85,431,289
 
 ### Answer
-20,332,093
+**20,332,093**
 
 **Query used:**
-`SELECT count(*) FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata`
+```SELECT count(*) FROM `` `bigquery-kat.ny_taxi_2024.yellow_tripdata`` ```
 
 ## Question 2:
 Write a query to count the distinct number of PULocationIDs for the entire dataset on both the tables.
@@ -45,14 +46,15 @@ What is the estimated amount of data that will be read when this query is execut
 ### Answer
 **0 MB for the External Table and 155.12 MB for the Materialized Table**
 
-Query used: 
-`SELECT distinct(PULocationID)
-from `bigquery-kat.ny_taxi_2024.yellow_tripdata_ext``
+**Query used:** 
+```SELECT distinct(PULocationID)
+from `` `bigquery-kat.ny_taxi_2024.yellow_tripdata_ext` ``; ```
+
 ![Materialized Table Image Q2](./images/q2-materialized.png)
 
 
-`SELECT distinct(PULocationID)
-from `bigquery-kat.ny_taxi_2024.yellow_tripdata``
+```SELECT distinct(PULocationID)
+from `` `bigquery-kat.ny_taxi_2024.yellow_tripdata` ``; ```
 
 ![External Table Image Q2](./images/q2-ext.png)
 
@@ -81,9 +83,9 @@ How many records have a fare_amount of 0?
 **8,333**
 
 **Query used:**
-`SELECT count(*)
-from `bigquery-kat.ny_taxi_2024.yellow_tripdata`
-where fare_amount =0`
+```SELECT count(*)
+from `` `bigquery-kat.ny_taxi_2024.yellow_tripdata` ``
+where fare_amount =0```
 
 ## Question 5:
 What is the best strategy to make an optimized table in Big Query if your query will always filter based on tpep_dropoff_datetime and order the results by VendorID (Create a new table with this strategy)
@@ -97,10 +99,10 @@ What is the best strategy to make an optimized table in Big Query if your query 
 **Partition by tpep_dropoff_datetime and Cluster on VendorID**
 
 **Query used:**
-`CREATE OR REPLACE TABLE `bigquery-kat.ny_taxi_2024.yellow_tripdata_partitioned_clustered`
+```CREATE OR REPLACE TABLE `bigquery-kat.ny_taxi_2024.yellow_tripdata_partitioned_clustered`
 PARTITION BY DATE(tpep_dropoff_datetime)
 CLUSTER BY VendorID AS
-SELECT * FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata`;`
+SELECT * FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata`;```
 
 
 ## Question 6:
@@ -119,13 +121,13 @@ Choose the answer which most closely matches.
 ***310.24 MB for non-partitioned table and 26.84 MB for the partitioned table**
 
 **Query used**
-`SELECT distinct(VendorID) as trips
+```SELECT distinct(VendorID) as trips
 FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata_partitioned_clustered`
-WHERE DATE(tpep_dropoff_datetime) BETWEEN '2024-03-01' AND '2024-03-15'`
+WHERE DATE(tpep_dropoff_datetime) BETWEEN '2024-03-01' AND '2024-03-15'```
 
-`SELECT distinct(VendorID) as trips
+```SELECT distinct(VendorID) as trips
 FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata`
-WHERE DATE(tpep_dropoff_datetime) BETWEEN '2024-03-01' AND '2024-03-15'`
+WHERE DATE(tpep_dropoff_datetime) BETWEEN '2024-03-01' AND '2024-03-15'```
 
 ## Question 7:
 Where is the data stored in the External Table you created?
