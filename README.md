@@ -1,1 +1,0 @@
-# ny-taxi-big-query
