@@ -6,7 +6,19 @@
 3. Create a GCS bucket and upload the files
 ![Buckets Image](./images/buckets.png)
 4. From Big Query, Set up dataset (ny_taxi_2024) and create an external table (yellow_tripdata) that points to GCS and file name match wild card yellow_tripdata_2024*.parquet
-![Big Query Image](./images/bigquery01.png)
+This means BigQuery does not use the data but fetch directly from GCS.
+
+`CREATE OR REPLACE EXTERNAL TABLE `bigquery-kat.ny_taxi_2024.yellow_tripdata_ext`
+OPTIONS (
+  format = 'PARQUET',
+  uris = ['gs://bigquery-kat/yellow_tripdata_2024-*.parquet']
+);`
+5. Create a regular table
+Purpose: Copy data from the external table into BigQuery storage.
+
+`CREATE or REPLACE TABLE `bigquery-kat.ny_taxi_2024.yellow_tripdata`
+AS
+SELECT * FROM `bigquery-kat.ny_taxi_2024.yellow_tripdata_ext``
 
 ## Question 1:
 What is count of records for the 2024 Yellow Taxi Data?
@@ -31,8 +43,28 @@ What is the estimated amount of data that will be read when this query is execut
 * 0 MB for the External Table and 0MB for the Materialized Table
 
 ### Answer
+**0 MB for the External Table and 155.12 MB for the Materialized Table**
 
-## Question 3:
+Query used: 
+`SELECT distinct(PULocationID)
+from `bigquery-kat.ny_taxi_2024.yellow_tripdata_ext``
+![Materialized Table Image Q2](./images/q2-materialized.png)
+
+
+`SELECT distinct(PULocationID)
+from `bigquery-kat.ny_taxi_2024.yellow_tripdata``
+
+![External Table Image Q2](./images/q2-ext.png)
+
+
+## Question 3:Write a query to retrieve the PULocationID from the table (not the external table) in BigQuery. Now write a query to retrieve the PULocationID and DOLocationID on the same table.
+
+Why are the estimated number of Bytes different?
+
+* BigQuery is a columnar database, and it only scans the specific columns requested in the query. Querying two columns (PULocationID, DOLocationID) requires reading more data than querying one column (PULocationID), leading to a higher estimated number of bytes processed.
+* BigQuery duplicates data across multiple storage partitions, so selecting two columns instead of one requires scanning the table twice, doubling the estimated bytes processed.
+* BigQuery automatically caches the first queried column, so adding a second column increases processing time but does not affect the estimated bytes scanned.
+* When selecting multiple columns, BigQuery performs an implicit join operation between them, increasing the estimated bytes processed
 
 
 ### Answer
@@ -80,6 +112,8 @@ Where is the data stored in the External Table you created?
 * Big Table
 
 ### Answer
+**GCP Bucket**
+**Explain:** With external tables, Big Query does not store it but will read data on demand. In this case, data is still stored in GCS. 
 
 ## Question 8:
 It is best practice in Big Query to always cluster your data:
@@ -88,3 +122,6 @@ It is best practice in Big Query to always cluster your data:
 * False
 
 ### Answer
+**False**
+
+**Explain:** Depending on the use case, we can choose whether to cluster data. There are scenarios where clustering might not be a good idea like: Table < 1 GB, Column has very low cardinality, Queries don’t filter or aggregate on clustered columns, Data is constantly inserted randomly (heavy reclustering cost)
