@@ -169,3 +169,14 @@ It is best practice in Big Query to always cluster your data:
 `False`
 
 **Explain:** Depending on the use case, we can choose whether to cluster data. There are scenarios where clustering might not be a good idea like: Table < 1 GB, Column has very low cardinality, Queries don’t filter or aggregate on clustered columns, Data is constantly inserted randomly (heavy reclustering cost)
+
+## Question 9:
+Write a SELECT count(*) query FROM the materialized table you created. How many bytes does it estimate will be read? Why?
+
+### Answer
+**Query**
+```select count(*) from `bigquery-kat.ny_taxi_2024.yellow_tripdata```
+Estimation: This query will process 0 B when run.
+
+**Explain:** COUNT(*) on a BigQuery table is free because BigQuery answers it using metadata, not data scans.
+
