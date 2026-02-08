@@ -1,0 +1,9 @@
+*.parquet
+pipeline/.env_encoded
+pipeline/service-account.json
+W2_kestra/service-account.json
+W2_kestra/.env_encoded
+W1_docker_terraform_pgadmin/practice_homework_docker_pgadmin/pipeline/.env_encoded
+W1_docker_terraform_pgadmin/practice_homework_docker_pgadmin/pipeline/.ipynb_checkpoints
+W1_docker_terraform_pgadmin/practice_terraform/keys/my-creds.json
+W1_docker_terraform_pgadmin/practice_homework_docker_pgadmin/pipeline/service-account.json
