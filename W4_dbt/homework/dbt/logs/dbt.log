@@ -1,0 +1,16 @@
+[0m13:49:43.086807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d10440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c93890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c939d0>]}
+
+
+============================== 13:49:43.093960 | c758c9f8-108c-4d3a-b26b-2046a9ede51a ==============================
+[0m13:49:43.093960 [info ] [MainThread]: Running with dbt=1.11.4
+[0m13:49:43.094768 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'debug': 'False', 'write_json': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'version_check': 'True', 'log_format': 'default', 'printer_width': '80', 'invocation_command': 'dbt build', 'log_path': 'logs', 'partial_parse': 'True', 'static_parser': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'target_path': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'empty': 'False', 'profiles_dir': '/Users/khanhdang/.dbt'}
+[0m13:49:43.095542 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:49:43.165865 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 0.19452682, "process_in_blocks": "0", "process_kernel_time": 0.414939, "process_mem_max_rss": "99540992", "process_out_blocks": "0", "process_user_time": 1.691613}
+[0m13:49:43.166691 [debug] [MainThread]: Command `dbt build` failed at 13:49:43.166535 after 0.20 seconds
+[0m13:49:43.167201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ca2650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ce4950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b157b0>]}
+[0m13:49:43.167721 [debug] [MainThread]: Flushing usage events
+[0m13:49:45.410196 [debug] [MainThread]: An error was encountered while trying to flush usage events

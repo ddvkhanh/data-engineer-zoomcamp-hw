@@ -6,19 +6,18 @@ macros:
       Returns a numeric value representing the duration in minutes.
     arguments:
       - name: pickup_datetime
-        description: "The timestamp when the trip started."
-        data_type: datetime
+        type: timestamp
+        description: The pickup timestamp
       - name: dropoff_datetime
-        description: "The timestamp when the trip ended."
-        data_type: datetime
-    return_type: float
-  - name: get_vendor_name
+        type: timestamp
+        description: The dropoff timestamp
+
+  - name: get_vendor_data
     description: >
       Generates a CASE statement that maps vendor_id to vendor_name.
       This macro is cross-database compatible and generates SQL at compile time using a Jinja dictionary.
       Supports vendor IDs: 1 (Creative Mobile Technologies), 2 (VeriFone Inc.), 4 (Unknown/Other).
     arguments:
-      - name: vendor_id
-        description: "The unique identifier for the taxi vendor."
-        data_type: integer
-    return_type: string
+      - name: vendor_id_column
+        type: integer
+        description: The column name containing the vendor ID

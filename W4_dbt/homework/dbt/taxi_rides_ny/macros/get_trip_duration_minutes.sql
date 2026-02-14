@@ -8,5 +8,5 @@
 #}
 
 {% macro get_trip_duration_minutes(pickup_datetime, dropoff_datetime) %}
-    {{ dbt.datediff(dropoff_datetime, pickup_datetime, 'minute') }}
+    {{ dbt.datediff(pickup_datetime, dropoff_datetime, 'minute') }}
 {% endmacro %}
