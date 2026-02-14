@@ -1,0 +1,24 @@
+macros:
+  - name: get_trip_duration_minutes
+    description: >
+      Calculates trip duration in minutes from pickup and dropoff timestamps.
+      This macro is cross-database compatible, supporting both DuckDB and BigQuery.
+      Returns a numeric value representing the duration in minutes.
+    arguments:
+      - name: pickup_datetime
+        description: "The timestamp when the trip started."
+        data_type: datetime
+      - name: dropoff_datetime
+        description: "The timestamp when the trip ended."
+        data_type: datetime
+    return_type: float
+  - name: get_vendor_name
+    description: >
+      Generates a CASE statement that maps vendor_id to vendor_name.
+      This macro is cross-database compatible and generates SQL at compile time using a Jinja dictionary.
+      Supports vendor IDs: 1 (Creative Mobile Technologies), 2 (VeriFone Inc.), 4 (Unknown/Other).
+    arguments:
+      - name: vendor_id
+        description: "The unique identifier for the taxi vendor."
+        data_type: integer
+    return_type: string
