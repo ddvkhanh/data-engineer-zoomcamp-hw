@@ -18,6 +18,8 @@ service-account.json
 keys/
 *.pem
 *.key
+*.msgpack
+
 
 # ========================
 # Terraform
@@ -61,4 +63,4 @@ venv/
 # ========================
 logs/
 target/
-.duckdb
+*.duckdb
