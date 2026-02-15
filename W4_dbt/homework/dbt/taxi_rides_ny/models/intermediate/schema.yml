@@ -60,7 +60,6 @@ models:
         data_tests:
           - not_null
           - accepted_values:
-              arguments:
                 values: ['Green', 'Yellow']
       - name: rate_code_id
         description: Rate code at end of trip

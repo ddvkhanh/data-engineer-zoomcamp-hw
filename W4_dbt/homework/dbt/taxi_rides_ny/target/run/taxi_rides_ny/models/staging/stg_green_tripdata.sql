@@ -1,6 +1,6 @@
 
   
-  create view "dev"."main"."stg_green_tripdata__dbt_tmp" as (
+  create view "taxi_rides_ny"."prod"."stg_green_tripdata__dbt_tmp" as (
     select 
     -- identifiers
     cast(vendorid as int) as vendor_id,
@@ -21,7 +21,7 @@
     -- payment info
     cast(fare_amount as numeric) as fare_amount,
     cast(extra as numeric) as extra,
-    cast(mta_tax as numeric) as mrta_tax,
+    cast(mta_tax as numeric) as mta_tax,
     cast(tip_amount as numeric) as tip_amount,
     cast(tolls_amount as numeric) as tolls_amount,
     cast(ehail_fee as numeric) as ehail_fee,

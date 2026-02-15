@@ -4,11 +4,11 @@
     
 
     create  table
-      "dev"."main"."dim_locations__dbt_tmp"
+      "taxi_rides_ny"."prod"."dim_locations__dbt_tmp"
   
     as (
       with taxi_zone_lookup as (
-    select * from "dev"."main"."taxi_zone_lookup"
+    select * from "taxi_rides_ny"."prod"."taxi_zone_lookup"
 ),
 renamed as (
     select 

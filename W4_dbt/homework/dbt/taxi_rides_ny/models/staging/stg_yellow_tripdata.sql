@@ -18,7 +18,7 @@ select
     -- payment info
     cast(fare_amount as numeric) as fare_amount,
     cast(extra as numeric) as extra,
-    cast(mta_tax as numeric) as mrta_tax,
+    cast(mta_tax as numeric) as mta_tax,
     cast(tip_amount as numeric) as tip_amount,
     cast(tolls_amount as numeric) as tolls_amount,
     0 as ehail_fee, -- this column is only for green_tripdata, so we set it to 0 for yellow_tripdata
