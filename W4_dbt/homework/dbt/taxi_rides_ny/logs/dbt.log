@@ -1,0 +1,1829 @@
+[0m23:14:08.321167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a8c6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa07890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa079d0>]}
+
+
+============================== 23:14:08.327405 | be71516b-142c-477e-a512-16b130611b3c ==============================
+[0m23:14:08.327405 [info ] [MainThread]: Running with dbt=1.11.4
+[0m23:14:08.328101 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'profiles_dir': '/Users/khanhdang/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'empty': 'None', 'introspect': 'True', 'write_json': 'True', 'debug': 'False', 'version_check': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'fail_fast': 'False', 'printer_width': '80', 'log_path': 'logs', 'use_colors': 'True', 'warn_error': 'None', 'static_parser': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:16:38.011156 [debug] [MainThread]: Starter project path: /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m23:16:38.021858 [info ] [MainThread]: 
+Your new dbt project "taxi_rides_ny" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:16:38.023038 [info ] [MainThread]: Setting up your profile.
+[0m23:16:50.215195 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 161.96756, "process_in_blocks": "0", "process_kernel_time": 0.293836, "process_mem_max_rss": "111562752", "process_out_blocks": "0", "process_user_time": 1.557846}
+[0m23:16:50.216260 [debug] [MainThread]: Command `dbt init` succeeded at 23:16:50.216101 after 161.97 seconds
+[0m23:16:50.216822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9ef230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a30bd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aae1480>]}
+[0m23:16:50.217370 [debug] [MainThread]: Flushing usage events
+[0m23:16:51.388678 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:50:50.742081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1135d0440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11454f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11454f9d0>]}
+
+
+============================== 13:50:50.748191 | 0cce2957-1b63-45a5-b5f4-76ab9e19df94 ==============================
+[0m13:50:50.748191 [info ] [MainThread]: Running with dbt=1.11.4
+[0m13:50:50.749019 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'indirect_selection': 'eager', 'no_print': 'None', 'debug': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/khanhdang/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'empty': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'quiet': 'False', 'introspect': 'True', 'write_json': 'True', 'invocation_command': 'dbt build', 'printer_width': '80', 'log_path': '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/logs', 'use_experimental_parser': 'False'}
+[0m13:50:51.118829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0cce2957-1b63-45a5-b5f4-76ab9e19df94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113815220>]}
+[0m13:50:51.193392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0cce2957-1b63-45a5-b5f4-76ab9e19df94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1143d7ce0>]}
+[0m13:50:51.198227 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:50:51.347834 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m13:50:51.475330 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m13:50:51.476023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0cce2957-1b63-45a5-b5f4-76ab9e19df94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11461cf50>]}
+[0m13:50:51.494159 [warn ] [MainThread]: [[33mWARNING[0m][DuplicateYAMLKeysDeprecation]: Deprecated functionality
+Duplicate key 'description' in "<unicode string>", line 8, column 5 in file
+`models/staging/sources.yml`
+[0m13:50:51.494765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0cce2957-1b63-45a5-b5f4-76ab9e19df94', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114593f20>]}
+[0m13:50:52.717708 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid macros config given in macros/macros_properties.yml @ macros: {'name': 'get_trip_duration_minutes', 'description': 'Calculates trip duration in minutes from pickup and dropoff timestamps. This macro is cross-database compatible, supporting both DuckDB and BigQuery. Returns a numeric value representing the duration in minutes.\n', 'arguments': [{'name': 'pickup_datetime', 'description': 'The timestamp when the trip started.', 'data_type': 'datetime'}, {'name': 'dropoff_datetime', 'description': 'The timestamp when the trip ended.', 'data_type': 'datetime'}], 'return_type': 'float', 'original_file_path': 'macros/macros_properties.yml', 'yaml_key': 'macros', 'package_name': 'taxi_rides_ny'} - at path ['arguments'][0]: Additional properties are not allowed ('data_type' was unexpected)
+[0m13:50:52.718347 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- DuplicateYAMLKeysDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:50:52.719648 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 2.0558367, "process_in_blocks": "0", "process_kernel_time": 0.326227, "process_mem_max_rss": "128614400", "process_out_blocks": "0", "process_user_time": 3.028971}
+[0m13:50:52.720087 [debug] [MainThread]: Command `dbt build` failed at 13:50:52.719986 after 2.06 seconds
+[0m13:50:52.720454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1143dbe70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114d39d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114b7cfc0>]}
+[0m13:50:52.720800 [debug] [MainThread]: Flushing usage events
+[0m13:50:54.063382 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:52:22.240364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11210c440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11308f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11308f9d0>]}
+
+
+============================== 13:52:22.246348 | e037d8be-3ff5-4442-844a-fe617a00b7ea ==============================
+[0m13:52:22.246348 [info ] [MainThread]: Running with dbt=1.11.4
+[0m13:52:22.247154 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_format': 'default', 'empty': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'warn_error': 'None', 'introspect': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'use_colors': 'True', 'profiles_dir': '/Users/khanhdang/.dbt', 'log_path': '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/logs', 'fail_fast': 'False', 'cache_selected_only': 'False', 'invocation_command': 'dbt build', 'write_json': 'True', 'static_parser': 'True'}
+[0m13:52:22.536682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e037d8be-3ff5-4442-844a-fe617a00b7ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112339220>]}
+[0m13:52:22.602672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e037d8be-3ff5-4442-844a-fe617a00b7ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f13ce0>]}
+[0m13:52:22.604341 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:52:22.749127 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m13:52:22.844917 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m13:52:22.845428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e037d8be-3ff5-4442-844a-fe617a00b7ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113158f50>]}
+[0m13:52:22.853798 [warn ] [MainThread]: [[33mWARNING[0m][DuplicateYAMLKeysDeprecation]: Deprecated functionality
+Duplicate key 'description' in "<unicode string>", line 8, column 5 in file
+`models/staging/sources.yml`
+[0m13:52:22.854311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e037d8be-3ff5-4442-844a-fe617a00b7ea', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1130cbf20>]}
+[0m13:52:24.639009 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid macros config given in macros/macros_properties.yml @ macros: {'name': 'get_trip_duration_minutes', 'description': 'Calculates trip duration in minutes from pickup and dropoff timestamps. This macro is cross-database compatible, supporting both DuckDB and BigQuery. Returns a numeric value representing the duration in minutes.\n', 'arguments': [{'name': 'pickup_datetime', 'description': 'The timestamp when the trip started.', 'data_type': 'datetime'}, {'name': 'dropoff_datetime', 'description': 'The timestamp when the trip ended.', 'data_type': 'datetime'}], 'return_type': 'float', 'original_file_path': 'macros/macros_properties.yml', 'yaml_key': 'macros', 'package_name': 'taxi_rides_ny'} - at path ['arguments'][0]: Additional properties are not allowed ('data_type' was unexpected)
+[0m13:52:24.639863 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- DuplicateYAMLKeysDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:52:24.641368 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 2.5844269, "process_in_blocks": "0", "process_kernel_time": 0.347514, "process_mem_max_rss": "129032192", "process_out_blocks": "0", "process_user_time": 3.917739}
+[0m13:52:24.641821 [debug] [MainThread]: Command `dbt build` failed at 13:52:24.641718 after 2.58 seconds
+[0m13:52:24.642199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f17e70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113879fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1135b9980>]}
+[0m13:52:24.642551 [debug] [MainThread]: Flushing usage events
+[0m13:52:25.970664 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:52:46.723169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053b8440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10633b890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10633b9d0>]}
+
+
+============================== 13:52:46.728702 | 948c4bee-2c2d-4bb1-9a60-95aa30968028 ==============================
+[0m13:52:46.728702 [info ] [MainThread]: Running with dbt=1.11.4
+[0m13:52:46.729465 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'partial_parse': 'True', 'static_parser': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt build', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'target_path': 'None', 'empty': 'False', 'warn_error': 'None', 'log_path': '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/logs', 'debug': 'False', 'profiles_dir': '/Users/khanhdang/.dbt', 'version_check': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'write_json': 'True', 'indirect_selection': 'eager'}
+[0m13:52:46.975571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '948c4bee-2c2d-4bb1-9a60-95aa30968028', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055fd220>]}
+[0m13:52:47.041199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '948c4bee-2c2d-4bb1-9a60-95aa30968028', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061bfce0>]}
+[0m13:52:47.042973 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:52:47.166701 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m13:52:47.274812 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m13:52:47.275536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '948c4bee-2c2d-4bb1-9a60-95aa30968028', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106408f50>]}
+[0m13:52:47.285044 [warn ] [MainThread]: [[33mWARNING[0m][DuplicateYAMLKeysDeprecation]: Deprecated functionality
+Duplicate key 'description' in "<unicode string>", line 8, column 5 in file
+`models/staging/sources.yml`
+[0m13:52:47.285638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '948c4bee-2c2d-4bb1-9a60-95aa30968028', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10637bf20>]}
+[0m13:52:48.545314 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid macros config given in macros/macros_properties.yml @ macros: {'name': 'get_trip_duration_minutes', 'description': 'Calculates trip duration in minutes from pickup and dropoff timestamps. This macro is cross-database compatible, supporting both DuckDB and BigQuery. Returns a numeric value representing the duration in minutes.\n', 'arguments': [{'name': 'pickup_datetime', 'description': 'The timestamp when the trip started.', 'data_type': 'datetime'}, {'name': 'dropoff_datetime', 'description': 'The timestamp when the trip ended.', 'data_type': 'datetime'}], 'return_type': 'float', 'original_file_path': 'macros/macros_properties.yml', 'yaml_key': 'macros', 'package_name': 'taxi_rides_ny'} - at path ['arguments'][0]: Additional properties are not allowed ('data_type' was unexpected)
+[0m13:52:48.545970 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- DuplicateYAMLKeysDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:52:48.547301 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 1.907046, "process_in_blocks": "0", "process_kernel_time": 0.317374, "process_mem_max_rss": "127791104", "process_out_blocks": "0", "process_user_time": 3.175294}
+[0m13:52:48.547754 [debug] [MainThread]: Command `dbt build` failed at 13:52:48.547646 after 1.91 seconds
+[0m13:52:48.548124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061c3e70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b21b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10695d230>]}
+[0m13:52:48.548483 [debug] [MainThread]: Flushing usage events
+[0m13:52:49.884460 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:53:26.939133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a304440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b28b890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b28b9d0>]}
+
+
+============================== 13:53:26.944942 | 9163379e-6aad-4ab9-83dc-1ebda442b57a ==============================
+[0m13:53:26.944942 [info ] [MainThread]: Running with dbt=1.11.4
+[0m13:53:26.945729 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'invocation_command': 'dbt build', 'printer_width': '80', 'no_print': 'None', 'debug': 'False', 'log_path': '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/logs', 'use_colors': 'True', 'quiet': 'False', 'version_check': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'static_parser': 'True', 'empty': 'False', 'introspect': 'True', 'profiles_dir': '/Users/khanhdang/.dbt', 'log_format': 'default', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'write_json': 'True'}
+[0m13:53:27.190397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9163379e-6aad-4ab9-83dc-1ebda442b57a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a535220>]}
+[0m13:53:27.255249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9163379e-6aad-4ab9-83dc-1ebda442b57a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b10fce0>]}
+[0m13:53:27.256936 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:53:27.379778 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m13:53:27.471642 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m13:53:27.472096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9163379e-6aad-4ab9-83dc-1ebda442b57a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b358f50>]}
+[0m13:53:28.794209 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid macros config given in macros/macros_properties.yml @ macros: {'name': 'get_trip_duration_minutes', 'description': 'Calculates trip duration in minutes from pickup and dropoff timestamps. This macro is cross-database compatible, supporting both DuckDB and BigQuery. Returns a numeric value representing the duration in minutes.\n', 'arguments': [{'name': 'pickup_datetime', 'description': 'The timestamp when the trip started.', 'data_type': 'datetime'}, {'name': 'dropoff_datetime', 'description': 'The timestamp when the trip ended.', 'data_type': 'datetime'}], 'return_type': 'float', 'original_file_path': 'macros/macros_properties.yml', 'yaml_key': 'macros', 'package_name': 'taxi_rides_ny'} - at path ['arguments'][0]: Additional properties are not allowed ('data_type' was unexpected)
+[0m13:53:28.795530 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 1.9319235, "process_in_blocks": "0", "process_kernel_time": 0.336776, "process_mem_max_rss": "128147456", "process_out_blocks": "0", "process_user_time": 3.501924}
+[0m13:53:28.795960 [debug] [MainThread]: Command `dbt build` failed at 13:53:28.795859 after 1.93 seconds
+[0m13:53:28.796318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb8c410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb8c500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b113e70>]}
+[0m13:53:28.796651 [debug] [MainThread]: Flushing usage events
+[0m13:53:30.024822 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:01:38.799652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c9f4440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d977890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d9779d0>]}
+
+
+============================== 14:01:38.807949 | a1193e57-6375-44e6-beb5-a27d1c5ece69 ==============================
+[0m14:01:38.807949 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:01:38.808843 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'use_colors': 'True', 'invocation_command': 'dbt build', 'printer_width': '80', 'profiles_dir': '/Users/khanhdang/.dbt', 'cache_selected_only': 'False', 'version_check': 'True', 'target_path': 'None', 'quiet': 'False', 'no_print': 'None', 'static_parser': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'log_path': '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/logs', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'empty': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'debug': 'False', 'partial_parse': 'True'}
+[0m14:01:39.169471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a1193e57-6375-44e6-beb5-a27d1c5ece69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc25220>]}
+[0m14:01:39.233314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a1193e57-6375-44e6-beb5-a27d1c5ece69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7fbce0>]}
+[0m14:01:39.237955 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:01:39.402447 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:01:39.507719 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m14:01:39.508164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a1193e57-6375-44e6-beb5-a27d1c5ece69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da44f50>]}
+[0m14:01:41.040467 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.taxi_rides_ny.stg_yellow_tripdata' (models/staging/stg_yellow_tripdata.sql) depends on a source named 'raw_data.yellow_tripdata' which was not found
+[0m14:01:41.043809 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 2.335566, "process_in_blocks": "0", "process_kernel_time": 0.512799, "process_mem_max_rss": "129372160", "process_out_blocks": "0", "process_user_time": 3.695227}
+[0m14:01:41.044357 [debug] [MainThread]: Command `dbt build` failed at 14:01:41.044238 after 2.34 seconds
+[0m14:01:41.044766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2d8c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2d9b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7ffe70>]}
+[0m14:01:41.045125 [debug] [MainThread]: Flushing usage events
+[0m14:01:42.283448 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:02:45.202414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106164440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070e7890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070e79d0>]}
+
+
+============================== 14:02:45.210354 | e8cf3790-049c-465b-8537-e7142f2dd1db ==============================
+[0m14:02:45.210354 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:02:45.211166 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'profiles_dir': '/Users/khanhdang/.dbt', 'log_cache_events': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'version_check': 'True', 'printer_width': '80', 'introspect': 'True', 'use_colors': 'True', 'invocation_command': 'dbt build', 'log_format': 'default', 'quiet': 'False', 'log_path': '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/logs', 'no_print': 'None', 'target_path': 'None'}
+[0m14:02:45.597331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106391220>]}
+[0m14:02:45.661966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f6bce0>]}
+[0m14:02:45.665487 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:02:45.820084 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:02:45.925818 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m14:02:45.926254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071b4f50>]}
+[0m14:02:47.599776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a19e50>]}
+[0m14:02:47.709373 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/manifest.json
+[0m14:02:47.711973 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/semantic_manifest.json
+[0m14:02:47.766353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c6db70>]}
+[0m14:02:47.766960 [info ] [MainThread]: Found 8 models, 2 seeds, 7 data tests, 2 sources, 475 macros
+[0m14:02:47.770525 [info ] [MainThread]: 
+[0m14:02:47.770985 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:02:47.771386 [info ] [MainThread]: 
+[0m14:02:47.772231 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:02:47.778876 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m14:02:47.991455 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m14:02:47.991963 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m14:02:47.992380 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:02:48.022660 [debug] [ThreadPool]: SQL status: OK in 0.030 seconds
+[0m14:02:48.024363 [debug] [ThreadPool]: On list_dev: Close
+[0m14:02:48.025199 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m14:02:48.025795 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m14:02:48.033423 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:02:48.033912 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m14:02:48.034300 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:02:48.035990 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:02:48.037617 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:02:48.038015 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m14:02:48.038682 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:02:48.039059 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:02:48.039424 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m14:02:48.040525 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:02:48.041550 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m14:02:48.041951 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:02:48.042347 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m14:02:48.043010 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:02:48.043431 [debug] [ThreadPool]: On create_dev_main: Close
+[0m14:02:48.045737 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dev_main, now list_dev_main)
+[0m14:02:48.053462 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m14:02:48.053931 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m14:02:48.054315 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:02:48.055742 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:02:48.056142 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m14:02:48.056546 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m14:02:48.081745 [debug] [ThreadPool]: SQL status: OK in 0.025 seconds
+[0m14:02:48.083362 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m14:02:48.085288 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m14:02:48.085718 [debug] [ThreadPool]: On list_dev_main: Close
+[0m14:02:48.086448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f0eb60>]}
+[0m14:02:48.087015 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:02:48.087404 [debug] [MainThread]: On master: BEGIN
+[0m14:02:48.087770 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:02:48.088495 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:02:48.088893 [debug] [MainThread]: On master: COMMIT
+[0m14:02:48.089284 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:02:48.089665 [debug] [MainThread]: On master: COMMIT
+[0m14:02:48.090262 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:02:48.090977 [debug] [MainThread]: On master: Close
+[0m14:02:48.094233 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.fct_trips
+[0m14:02:48.094896 [info ] [Thread-1 (]: 1 of 16 START sql table model main.fct_trips ................................... [RUN]
+[0m14:02:48.095465 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now model.taxi_rides_ny.fct_trips)
+[0m14:02:48.095929 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.fct_trips
+[0m14:02:48.104193 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.fct_trips"
+[0m14:02:48.105841 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.fct_trips
+[0m14:02:48.153877 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.fct_trips"
+[0m14:02:48.155436 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:02:48.155946 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: BEGIN
+[0m14:02:48.156504 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:48.157387 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:02:48.157885 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:02:48.158374 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."fct_trips__dbt_tmp"
+  
+    as (
+      /*To do:
+- one row per trip (does not matter if yellow or green)
+- add a primary key (trip_id) to the fact table. it has to be unique
+- find all the duplicates. understand why they are duplicates and how to fix them.
+- find a way to enrich the column payment_type*/
+
+select 1
+    );
+  
+  
+[0m14:02:48.167426 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m14:02:48.177497 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:02:48.178065 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+alter table "dev"."main"."fct_trips__dbt_tmp" rename to "fct_trips"
+[0m14:02:48.179968 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:02:48.202564 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: COMMIT
+[0m14:02:48.203217 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:02:48.203733 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: COMMIT
+[0m14:02:48.207938 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m14:02:48.214982 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:02:48.215550 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+
+      drop table if exists "dev"."main"."fct_trips__dbt_backup" cascade
+    
+[0m14:02:48.216509 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:02:48.219526 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: Close
+[0m14:02:48.222220 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c4a2d0>]}
+[0m14:02:48.223113 [info ] [Thread-1 (]: 1 of 16 OK created sql table model main.fct_trips .............................. [[32mOK[0m in 0.12s]
+[0m14:02:48.223955 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.fct_trips
+[0m14:02:48.224582 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.stg_green_tripdata
+[0m14:02:48.225243 [info ] [Thread-1 (]: 2 of 16 START sql view model main.stg_green_tripdata ........................... [RUN]
+[0m14:02:48.225957 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.fct_trips, now model.taxi_rides_ny.stg_green_tripdata)
+[0m14:02:48.226463 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.stg_green_tripdata
+[0m14:02:48.229846 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:02:48.230968 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.stg_green_tripdata
+[0m14:02:48.256647 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:02:48.257983 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:02:48.258872 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: BEGIN
+[0m14:02:48.259665 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:48.261494 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:02:48.262616 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:02:48.263218 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_green_tripdata"} */
+
+  
+  create view "dev"."main"."stg_green_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(lpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(lpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    cast(trip_type as int) as trip_type,
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    cast(ehail_fee as numeric) as ehail_fee,
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."green_tripdata"
+where vendorid is not null
+  );
+
+[0m14:02:48.272515 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_green_tripdata"} */
+
+  
+  create view "dev"."main"."stg_green_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(lpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(lpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    cast(trip_type as int) as trip_type,
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    cast(ehail_fee as numeric) as ehail_fee,
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."green_tripdata"
+where vendorid is not null
+  );
+
+[0m14:02:48.273419 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:02:48.274202 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: ROLLBACK
+[0m14:02:48.289595 [debug] [Thread-1 (]: Failed to rollback 'model.taxi_rides_ny.stg_green_tripdata'
+[0m14:02:48.290183 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: Close
+[0m14:02:48.296119 [debug] [Thread-1 (]: Runtime Error in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:02:48.296832 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ca5860>]}
+[0m14:02:48.297637 [error] [Thread-1 (]: 2 of 16 ERROR creating sql view model main.stg_green_tripdata .................. [[31mERROR[0m in 0.07s]
+[0m14:02:48.298470 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.stg_green_tripdata
+[0m14:02:48.299013 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:02:48.299690 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.stg_green_tripdata' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!.
+[0m14:02:48.300294 [info ] [Thread-1 (]: 3 of 16 START sql view model main.stg_yellow_tripdata .......................... [RUN]
+[0m14:02:48.301348 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.stg_green_tripdata, now model.taxi_rides_ny.stg_yellow_tripdata)
+[0m14:02:48.301856 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:02:48.305436 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:02:48.306479 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:02:48.311047 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:02:48.312123 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:02:48.312602 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: BEGIN
+[0m14:02:48.313051 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:48.314052 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:02:48.314857 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:02:48.315566 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_yellow_tripdata"} */
+
+  
+  create view "dev"."main"."stg_yellow_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(tpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(tpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    1 as trip_type, -- yellow taxis can only be street-hail, so we set trip_type to 1 for all records in yellow_tripdata
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    0 as ehail_fee, -- this column is only for green_tripdata, so we set it to 0 for yellow_tripdata
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."yellow_tripdata"
+where vendorid is not null
+  );
+
+[0m14:02:48.316918 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_yellow_tripdata"} */
+
+  
+  create view "dev"."main"."stg_yellow_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(tpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(tpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    1 as trip_type, -- yellow taxis can only be street-hail, so we set trip_type to 1 for all records in yellow_tripdata
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    0 as ehail_fee, -- this column is only for green_tripdata, so we set it to 0 for yellow_tripdata
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."yellow_tripdata"
+where vendorid is not null
+  );
+
+[0m14:02:48.317463 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:02:48.318060 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: ROLLBACK
+[0m14:02:48.323082 [debug] [Thread-1 (]: Failed to rollback 'model.taxi_rides_ny.stg_yellow_tripdata'
+[0m14:02:48.323618 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: Close
+[0m14:02:48.329218 [debug] [Thread-1 (]: Runtime Error in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:02:48.329947 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10811cd70>]}
+[0m14:02:48.330781 [error] [Thread-1 (]: 3 of 16 ERROR creating sql view model main.stg_yellow_tripdata ................. [[31mERROR[0m in 0.03s]
+[0m14:02:48.331581 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:02:48.332116 [debug] [Thread-1 (]: Began running node seed.taxi_rides_ny.payment_type_lookup
+[0m14:02:48.332716 [info ] [Thread-1 (]: 4 of 16 START seed file main.payment_type_lookup ............................... [RUN]
+[0m14:02:48.333392 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.stg_yellow_tripdata' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!.
+[0m14:02:48.333910 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.stg_yellow_tripdata, now seed.taxi_rides_ny.payment_type_lookup)
+[0m14:02:48.334609 [debug] [Thread-1 (]: Began compiling node seed.taxi_rides_ny.payment_type_lookup
+[0m14:02:48.335113 [debug] [Thread-1 (]: Began executing node seed.taxi_rides_ny.payment_type_lookup
+[0m14:02:48.366267 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.payment_type_lookup"
+[0m14:02:48.366835 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: BEGIN
+[0m14:02:48.367291 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:48.368157 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:02:48.368624 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.payment_type_lookup"
+[0m14:02:48.369087 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "seed.taxi_rides_ny.payment_type_lookup"} */
+
+    create table "dev"."main"."payment_type_lookup" ("payment_type" integer,"description" text)
+  
+[0m14:02:48.369965 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:02:48.384933 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.payment_type_lookup"
+[0m14:02:48.385499 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: 
+          COPY "dev"."main"."payment_type_lookup" FROM '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/seeds/payment_type_lookup.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m14:02:48.396898 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m14:02:48.403694 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.taxi_rides_ny.payment_type_lookup"
+[0m14:02:48.406152 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: COMMIT
+[0m14:02:48.406679 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.payment_type_lookup"
+[0m14:02:48.407137 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: COMMIT
+[0m14:02:48.408278 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:02:48.409242 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: Close
+[0m14:02:48.409915 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fdd7d0>]}
+[0m14:02:48.410581 [info ] [Thread-1 (]: 4 of 16 OK loaded seed file main.payment_type_lookup ........................... [[32mINSERT 7[0m in 0.08s]
+[0m14:02:48.411342 [debug] [Thread-1 (]: Finished running node seed.taxi_rides_ny.payment_type_lookup
+[0m14:02:48.411881 [debug] [Thread-1 (]: Began running node seed.taxi_rides_ny.taxi_zone_lookup
+[0m14:02:48.412475 [info ] [Thread-1 (]: 5 of 16 START seed file main.taxi_zone_lookup .................................. [RUN]
+[0m14:02:48.413044 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.taxi_rides_ny.payment_type_lookup, now seed.taxi_rides_ny.taxi_zone_lookup)
+[0m14:02:48.413526 [debug] [Thread-1 (]: Began compiling node seed.taxi_rides_ny.taxi_zone_lookup
+[0m14:02:48.414009 [debug] [Thread-1 (]: Began executing node seed.taxi_rides_ny.taxi_zone_lookup
+[0m14:02:48.422850 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.taxi_zone_lookup"
+[0m14:02:48.423539 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: BEGIN
+[0m14:02:48.424100 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:48.424962 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:02:48.425437 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.taxi_zone_lookup"
+[0m14:02:48.425904 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "seed.taxi_rides_ny.taxi_zone_lookup"} */
+
+    create table "dev"."main"."taxi_zone_lookup" ("locationid" integer,"borough" text,"zone" text,"service_zone" text)
+  
+[0m14:02:48.427103 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:02:48.429838 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.taxi_zone_lookup"
+[0m14:02:48.430421 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: 
+          COPY "dev"."main"."taxi_zone_lookup" FROM '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/seeds/taxi_zone_lookup.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m14:02:48.435205 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m14:02:48.435980 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.taxi_rides_ny.taxi_zone_lookup"
+[0m14:02:48.439419 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: COMMIT
+[0m14:02:48.439984 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.taxi_zone_lookup"
+[0m14:02:48.445639 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: COMMIT
+[0m14:02:48.448091 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:02:48.451050 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: Close
+[0m14:02:48.451870 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108184280>]}
+[0m14:02:48.452574 [info ] [Thread-1 (]: 5 of 16 OK loaded seed file main.taxi_zone_lookup .............................. [[32mINSERT 265[0m in 0.04s]
+[0m14:02:48.453463 [debug] [Thread-1 (]: Finished running node seed.taxi_rides_ny.taxi_zone_lookup
+[0m14:02:48.454007 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.int_trips_unioned
+[0m14:02:48.454538 [info ] [Thread-1 (]: 6 of 16 SKIP relation main.int_trips_unioned ................................... [[33mSKIP[0m]
+[0m14:02:48.455302 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.int_trips_unioned
+[0m14:02:48.455906 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.int_trips_unioned' to be skipped because of status 'skipped'. 
+[0m14:02:48.456632 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_locations
+[0m14:02:48.457243 [info ] [Thread-1 (]: 7 of 16 START sql table model main.dim_locations ............................... [RUN]
+[0m14:02:48.457877 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.taxi_rides_ny.taxi_zone_lookup, now model.taxi_rides_ny.dim_locations)
+[0m14:02:48.458447 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.dim_locations
+[0m14:02:48.461659 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.dim_locations"
+[0m14:02:48.463130 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.dim_locations
+[0m14:02:48.472859 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.dim_locations"
+[0m14:02:48.474115 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:02:48.474620 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: BEGIN
+[0m14:02:48.475077 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:02:48.475930 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:02:48.476397 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:02:48.476865 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."dim_locations__dbt_tmp"
+  
+    as (
+      with taxi_zone_lookup as (
+    select * from "dev"."main"."taxi_zone_lookup"
+),
+renamed as (
+    select 
+        locationid as location_id,
+        borough,
+        zone,
+        service_zone
+    from taxi_zone_lookup
+)
+
+select * from renamed
+    );
+  
+  
+[0m14:02:48.481164 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m14:02:48.485741 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:02:48.486312 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+alter table "dev"."main"."dim_locations__dbt_tmp" rename to "dim_locations"
+[0m14:02:48.487279 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:02:48.489131 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: COMMIT
+[0m14:02:48.489656 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:02:48.490118 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: COMMIT
+[0m14:02:48.491513 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:02:48.494148 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:02:48.494891 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+
+      drop table if exists "dev"."main"."dim_locations__dbt_backup" cascade
+    
+[0m14:02:48.495793 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:02:48.497528 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: Close
+[0m14:02:48.498201 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8cf3790-049c-465b-8537-e7142f2dd1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080cc230>]}
+[0m14:02:48.498964 [info ] [Thread-1 (]: 7 of 16 OK created sql table model main.dim_locations .......................... [[32mOK[0m in 0.04s]
+[0m14:02:48.499726 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_locations
+[0m14:02:48.500240 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_vendors
+[0m14:02:48.500763 [info ] [Thread-1 (]: 8 of 16 SKIP relation main.dim_vendors ......................................... [[33mSKIP[0m]
+[0m14:02:48.501443 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_vendors
+[0m14:02:48.501964 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.int_trips
+[0m14:02:48.502464 [info ] [Thread-1 (]: 9 of 16 SKIP relation main.int_trips ........................................... [[33mSKIP[0m]
+[0m14:02:48.503016 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.int_trips
+[0m14:02:48.503471 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.dim_vendors' to be skipped because of status 'skipped'. 
+[0m14:02:48.503965 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.int_trips' to be skipped because of status 'skipped'. 
+[0m14:02:48.505181 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.accepted_values_int_trips_service_type__Green__Yellow.c251a1899e
+[0m14:02:48.505737 [info ] [Thread-1 (]: 10 of 16 SKIP test accepted_values_int_trips_service_type__Green__Yellow ....... [[33mSKIP[0m]
+[0m14:02:48.506435 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.accepted_values_int_trips_service_type__Green__Yellow.c251a1899e
+[0m14:02:48.506970 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.not_null_int_trips_pickup_datetime.e4fa5f3e09
+[0m14:02:48.507484 [info ] [Thread-1 (]: 11 of 16 SKIP test not_null_int_trips_pickup_datetime .......................... [[33mSKIP[0m]
+[0m14:02:48.507971 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.accepted_values_int_trips_service_type__Green__Yellow.c251a1899e' to be skipped because of status 'skipped'. 
+[0m14:02:48.508475 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.not_null_int_trips_pickup_datetime.e4fa5f3e09
+[0m14:02:48.509141 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.not_null_int_trips_service_type.f38e150f53
+[0m14:02:48.509653 [info ] [Thread-1 (]: 12 of 16 SKIP test not_null_int_trips_service_type ............................. [[33mSKIP[0m]
+[0m14:02:48.510156 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.not_null_int_trips_pickup_datetime.e4fa5f3e09' to be skipped because of status 'skipped'. 
+[0m14:02:48.510672 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.not_null_int_trips_service_type.f38e150f53
+[0m14:02:48.511637 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.not_null_int_trips_total_amount.ec933efa9b
+[0m14:02:48.512482 [info ] [Thread-1 (]: 13 of 16 SKIP test not_null_int_trips_total_amount ............................. [[33mSKIP[0m]
+[0m14:02:48.513294 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.not_null_int_trips_service_type.f38e150f53' to be skipped because of status 'skipped'. 
+[0m14:02:48.513852 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.not_null_int_trips_total_amount.ec933efa9b
+[0m14:02:48.514497 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.not_null_int_trips_trip_id.9edd5fee61
+[0m14:02:48.515012 [info ] [Thread-1 (]: 14 of 16 SKIP test not_null_int_trips_trip_id .................................. [[33mSKIP[0m]
+[0m14:02:48.515486 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.not_null_int_trips_total_amount.ec933efa9b' to be skipped because of status 'skipped'. 
+[0m14:02:48.515991 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.not_null_int_trips_trip_id.9edd5fee61
+[0m14:02:48.516602 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.not_null_int_trips_vendor_id.c9ac94714c
+[0m14:02:48.517109 [info ] [Thread-1 (]: 15 of 16 SKIP test not_null_int_trips_vendor_id ................................ [[33mSKIP[0m]
+[0m14:02:48.517658 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.not_null_int_trips_vendor_id.c9ac94714c
+[0m14:02:48.518154 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.unique_int_trips_trip_id.37d69d814f
+[0m14:02:48.518653 [info ] [Thread-1 (]: 16 of 16 SKIP test unique_int_trips_trip_id .................................... [[33mSKIP[0m]
+[0m14:02:48.519304 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.not_null_int_trips_trip_id.9edd5fee61' to be skipped because of status 'skipped'. 
+[0m14:02:48.519826 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.unique_int_trips_trip_id.37d69d814f
+[0m14:02:48.520316 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.not_null_int_trips_vendor_id.c9ac94714c' to be skipped because of status 'skipped'. 
+[0m14:02:48.520943 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.unique_int_trips_trip_id.37d69d814f' to be skipped because of status 'skipped'. 
+[0m14:02:48.522368 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:02:48.523000 [debug] [MainThread]: On master: BEGIN
+[0m14:02:48.523422 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:02:48.524318 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:02:48.524836 [debug] [MainThread]: On master: COMMIT
+[0m14:02:48.525261 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:02:48.525657 [debug] [MainThread]: On master: COMMIT
+[0m14:02:48.526395 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:02:48.526829 [debug] [MainThread]: On master: Close
+[0m14:02:48.527375 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:02:48.527754 [debug] [MainThread]: Connection 'model.taxi_rides_ny.dim_locations' was properly closed.
+[0m14:02:48.528394 [info ] [MainThread]: 
+[0m14:02:48.529086 [info ] [MainThread]: Finished running 2 seeds, 5 table models, 7 data tests, 2 view models in 0 hours 0 minutes and 0.76 seconds (0.76s).
+[0m14:02:48.531672 [debug] [MainThread]: Command end result
+[0m14:02:48.565613 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/manifest.json
+[0m14:02:48.568041 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/semantic_manifest.json
+[0m14:02:48.576580 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/run_results.json
+[0m14:02:48.577055 [info ] [MainThread]: 
+[0m14:02:48.577540 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m14:02:48.577965 [info ] [MainThread]: 
+[0m14:02:48.578471 [error] [MainThread]: [31mFailure in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)[0m
+[0m14:02:48.579038 [error] [MainThread]:   Runtime Error in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:02:48.579472 [info ] [MainThread]: 
+[0m14:02:48.579962 [info ] [MainThread]:   compiled code at target/compiled/taxi_rides_ny/models/staging/stg_green_tripdata.sql
+[0m14:02:48.580477 [info ] [MainThread]: 
+[0m14:02:48.581077 [error] [MainThread]: [31mFailure in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)[0m
+[0m14:02:48.581595 [error] [MainThread]:   Runtime Error in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:02:48.582000 [info ] [MainThread]: 
+[0m14:02:48.582596 [info ] [MainThread]:   compiled code at target/compiled/taxi_rides_ny/models/staging/stg_yellow_tripdata.sql
+[0m14:02:48.583026 [info ] [MainThread]: 
+[0m14:02:48.583482 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=2 SKIP=10 NO-OP=0 TOTAL=16
+[0m14:02:48.586040 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 3.4768548, "process_in_blocks": "0", "process_kernel_time": 0.62578, "process_mem_max_rss": "148901888", "process_out_blocks": "0", "process_user_time": 4.57478}
+[0m14:02:48.586658 [debug] [MainThread]: Command `dbt build` failed at 14:02:48.586516 after 3.48 seconds
+[0m14:02:48.587233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057e4dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108155490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10817fcb0>]}
+[0m14:02:48.587757 [debug] [MainThread]: Flushing usage events
+[0m14:02:51.324706 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:05:49.393884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111710440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11268f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11268f9d0>]}
+
+
+============================== 14:05:49.402298 | ac174eec-9c7e-40da-b4c8-4eabfdae3bd8 ==============================
+[0m14:05:49.402298 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:05:49.403245 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'use_experimental_parser': 'False', 'empty': 'False', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'log_path': '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/logs', 'version_check': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'static_parser': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'invocation_command': 'dbt build', 'quiet': 'False', 'profiles_dir': '/Users/khanhdang/.dbt', 'target_path': 'None', 'debug': 'False', 'fail_fast': 'False', 'introspect': 'True', 'use_colors': 'True'}
+[0m14:05:49.770363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111941220>]}
+[0m14:05:49.832969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112517ce0>]}
+[0m14:05:49.836521 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:05:49.982204 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:05:50.239466 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:05:50.241016 [debug] [MainThread]: Partial parsing: updated file: taxi_rides_ny://models/staging/sources.yml
+[0m14:05:50.928553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c8ed50>]}
+[0m14:05:51.018352 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/manifest.json
+[0m14:05:51.020455 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/semantic_manifest.json
+[0m14:05:51.081117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11299fc50>]}
+[0m14:05:51.081715 [info ] [MainThread]: Found 8 models, 2 seeds, 7 data tests, 2 sources, 475 macros
+[0m14:05:51.085268 [info ] [MainThread]: 
+[0m14:05:51.085729 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:05:51.086140 [info ] [MainThread]: 
+[0m14:05:51.086808 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:05:51.093615 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m14:05:51.172212 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m14:05:51.172753 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m14:05:51.173176 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:05:51.217432 [debug] [ThreadPool]: SQL status: OK in 0.044 seconds
+[0m14:05:51.219252 [debug] [ThreadPool]: On list_dev: Close
+[0m14:05:51.220156 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m14:05:51.220762 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m14:05:51.228317 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:05:51.228746 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m14:05:51.229138 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:05:51.231110 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:05:51.232870 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:05:51.233292 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m14:05:51.233982 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:05:51.234381 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:05:51.234768 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m14:05:51.236735 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:05:51.237992 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m14:05:51.238434 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:05:51.238832 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m14:05:51.239547 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:05:51.239974 [debug] [ThreadPool]: On create_dev_main: Close
+[0m14:05:51.241965 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dev_main, now list_dev_main)
+[0m14:05:51.248700 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m14:05:51.249123 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m14:05:51.249509 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:05:51.250226 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:05:51.250632 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m14:05:51.251042 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m14:05:51.272933 [debug] [ThreadPool]: SQL status: OK in 0.021 seconds
+[0m14:05:51.274649 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m14:05:51.277082 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m14:05:51.277588 [debug] [ThreadPool]: On list_dev_main: Close
+[0m14:05:51.279307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11307a970>]}
+[0m14:05:51.279892 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:05:51.280298 [debug] [MainThread]: On master: BEGIN
+[0m14:05:51.280682 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:05:51.281439 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:05:51.281849 [debug] [MainThread]: On master: COMMIT
+[0m14:05:51.282251 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:05:51.282645 [debug] [MainThread]: On master: COMMIT
+[0m14:05:51.283281 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:05:51.283698 [debug] [MainThread]: On master: Close
+[0m14:05:51.287306 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.fct_trips
+[0m14:05:51.288016 [info ] [Thread-1 (]: 1 of 16 START sql table model main.fct_trips ................................... [RUN]
+[0m14:05:51.288615 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now model.taxi_rides_ny.fct_trips)
+[0m14:05:51.289093 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.fct_trips
+[0m14:05:51.296560 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.fct_trips"
+[0m14:05:51.297458 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.fct_trips
+[0m14:05:51.337892 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.fct_trips"
+[0m14:05:51.338966 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:05:51.339442 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: BEGIN
+[0m14:05:51.339899 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:51.340753 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.341355 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:05:51.341902 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."fct_trips__dbt_tmp"
+  
+    as (
+      /*To do:
+- one row per trip (does not matter if yellow or green)
+- add a primary key (trip_id) to the fact table. it has to be unique
+- find all the duplicates. understand why they are duplicates and how to fix them.
+- find a way to enrich the column payment_type*/
+
+select 1
+    );
+  
+  
+[0m14:05:51.347304 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m14:05:51.354204 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:05:51.354740 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_trips'
+  
+[0m14:05:51.355931 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.357512 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:05:51.357990 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_trips'
+  
+[0m14:05:51.359939 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.368047 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:05:51.368571 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+alter table "dev"."main"."fct_trips" rename to "fct_trips__dbt_backup"
+[0m14:05:51.370018 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.373372 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:05:51.373862 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+alter table "dev"."main"."fct_trips__dbt_tmp" rename to "fct_trips"
+[0m14:05:51.374667 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:05:51.392173 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: COMMIT
+[0m14:05:51.392620 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:05:51.392987 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: COMMIT
+[0m14:05:51.395462 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:05:51.399967 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:05:51.400313 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+
+      drop table if exists "dev"."main"."fct_trips__dbt_backup" cascade
+    
+[0m14:05:51.402541 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:05:51.406174 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: Close
+[0m14:05:51.408645 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113532d00>]}
+[0m14:05:51.409468 [info ] [Thread-1 (]: 1 of 16 OK created sql table model main.fct_trips .............................. [[32mOK[0m in 0.12s]
+[0m14:05:51.410216 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.fct_trips
+[0m14:05:51.410726 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.stg_green_tripdata
+[0m14:05:51.411308 [info ] [Thread-1 (]: 2 of 16 START sql view model main.stg_green_tripdata ........................... [RUN]
+[0m14:05:51.411868 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.fct_trips, now model.taxi_rides_ny.stg_green_tripdata)
+[0m14:05:51.412332 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.stg_green_tripdata
+[0m14:05:51.415535 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:05:51.416517 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.stg_green_tripdata
+[0m14:05:51.442647 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:05:51.443704 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:05:51.444186 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: BEGIN
+[0m14:05:51.444640 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:51.445478 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.445949 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:05:51.446455 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_green_tripdata"} */
+
+  
+  create view "dev"."main"."stg_green_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(lpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(lpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    cast(trip_type as int) as trip_type,
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    cast(ehail_fee as numeric) as ehail_fee,
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."green_tripdata"
+where vendorid is not null
+  );
+
+[0m14:05:51.457748 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_green_tripdata"} */
+
+  
+  create view "dev"."main"."stg_green_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(lpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(lpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    cast(trip_type as int) as trip_type,
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    cast(ehail_fee as numeric) as ehail_fee,
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."green_tripdata"
+where vendorid is not null
+  );
+
+[0m14:05:51.458450 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:05:51.459106 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: ROLLBACK
+[0m14:05:51.478353 [debug] [Thread-1 (]: Failed to rollback 'model.taxi_rides_ny.stg_green_tripdata'
+[0m14:05:51.478921 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: Close
+[0m14:05:51.485818 [debug] [Thread-1 (]: Runtime Error in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:05:51.486492 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113520110>]}
+[0m14:05:51.487292 [error] [Thread-1 (]: 2 of 16 ERROR creating sql view model main.stg_green_tripdata .................. [[31mERROR[0m in 0.07s]
+[0m14:05:51.488088 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.stg_green_tripdata
+[0m14:05:51.488611 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:05:51.489206 [info ] [Thread-1 (]: 3 of 16 START sql view model main.stg_yellow_tripdata .......................... [RUN]
+[0m14:05:51.489876 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.stg_green_tripdata, now model.taxi_rides_ny.stg_yellow_tripdata)
+[0m14:05:51.490377 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:05:51.493397 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:05:51.494166 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.stg_green_tripdata' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!.
+[0m14:05:51.495425 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:05:51.498574 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:05:51.499388 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:05:51.499857 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: BEGIN
+[0m14:05:51.500304 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:51.501153 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.501617 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:05:51.502115 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_yellow_tripdata"} */
+
+  
+  create view "dev"."main"."stg_yellow_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(tpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(tpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    1 as trip_type, -- yellow taxis can only be street-hail, so we set trip_type to 1 for all records in yellow_tripdata
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    0 as ehail_fee, -- this column is only for green_tripdata, so we set it to 0 for yellow_tripdata
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."yellow_tripdata"
+where vendorid is not null
+  );
+
+[0m14:05:51.503253 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_yellow_tripdata"} */
+
+  
+  create view "dev"."main"."stg_yellow_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(tpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(tpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    1 as trip_type, -- yellow taxis can only be street-hail, so we set trip_type to 1 for all records in yellow_tripdata
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    0 as ehail_fee, -- this column is only for green_tripdata, so we set it to 0 for yellow_tripdata
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."yellow_tripdata"
+where vendorid is not null
+  );
+
+[0m14:05:51.503791 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:05:51.504348 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: ROLLBACK
+[0m14:05:51.509392 [debug] [Thread-1 (]: Failed to rollback 'model.taxi_rides_ny.stg_yellow_tripdata'
+[0m14:05:51.509912 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: Close
+[0m14:05:51.515358 [debug] [Thread-1 (]: Runtime Error in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:05:51.515972 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ff26d0>]}
+[0m14:05:51.516738 [error] [Thread-1 (]: 3 of 16 ERROR creating sql view model main.stg_yellow_tripdata ................. [[31mERROR[0m in 0.03s]
+[0m14:05:51.517495 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:05:51.518013 [debug] [Thread-1 (]: Began running node seed.taxi_rides_ny.payment_type_lookup
+[0m14:05:51.518605 [info ] [Thread-1 (]: 4 of 16 START seed file main.payment_type_lookup ............................... [RUN]
+[0m14:05:51.519311 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.stg_yellow_tripdata' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!.
+[0m14:05:51.519824 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.stg_yellow_tripdata, now seed.taxi_rides_ny.payment_type_lookup)
+[0m14:05:51.520519 [debug] [Thread-1 (]: Began compiling node seed.taxi_rides_ny.payment_type_lookup
+[0m14:05:51.521002 [debug] [Thread-1 (]: Began executing node seed.taxi_rides_ny.payment_type_lookup
+[0m14:05:51.553880 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.payment_type_lookup"
+[0m14:05:51.554441 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: BEGIN
+[0m14:05:51.554899 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:51.555768 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.556234 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.payment_type_lookup"
+[0m14:05:51.556692 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "seed.taxi_rides_ny.payment_type_lookup"} */
+truncate table "dev"."main"."payment_type_lookup"
+[0m14:05:51.557760 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.571992 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.payment_type_lookup"
+[0m14:05:51.572485 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: 
+          COPY "dev"."main"."payment_type_lookup" FROM '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/seeds/payment_type_lookup.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m14:05:51.585575 [debug] [Thread-1 (]: SQL status: OK in 0.013 seconds
+[0m14:05:51.592913 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.taxi_rides_ny.payment_type_lookup"
+[0m14:05:51.595089 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: COMMIT
+[0m14:05:51.595589 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.payment_type_lookup"
+[0m14:05:51.596045 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: COMMIT
+[0m14:05:51.597528 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.598492 [debug] [Thread-1 (]: On seed.taxi_rides_ny.payment_type_lookup: Close
+[0m14:05:51.599140 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11354b7f0>]}
+[0m14:05:51.599789 [info ] [Thread-1 (]: 4 of 16 OK loaded seed file main.payment_type_lookup ........................... [[32mINSERT 7[0m in 0.08s]
+[0m14:05:51.600551 [debug] [Thread-1 (]: Finished running node seed.taxi_rides_ny.payment_type_lookup
+[0m14:05:51.601058 [debug] [Thread-1 (]: Began running node seed.taxi_rides_ny.taxi_zone_lookup
+[0m14:05:51.601655 [info ] [Thread-1 (]: 5 of 16 START seed file main.taxi_zone_lookup .................................. [RUN]
+[0m14:05:51.602287 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.taxi_rides_ny.payment_type_lookup, now seed.taxi_rides_ny.taxi_zone_lookup)
+[0m14:05:51.602783 [debug] [Thread-1 (]: Began compiling node seed.taxi_rides_ny.taxi_zone_lookup
+[0m14:05:51.603265 [debug] [Thread-1 (]: Began executing node seed.taxi_rides_ny.taxi_zone_lookup
+[0m14:05:51.611481 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.taxi_zone_lookup"
+[0m14:05:51.612041 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: BEGIN
+[0m14:05:51.612511 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:51.613412 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.613885 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.taxi_zone_lookup"
+[0m14:05:51.614348 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "seed.taxi_rides_ny.taxi_zone_lookup"} */
+truncate table "dev"."main"."taxi_zone_lookup"
+[0m14:05:51.615303 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:05:51.616829 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.taxi_zone_lookup"
+[0m14:05:51.617383 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: 
+          COPY "dev"."main"."taxi_zone_lookup" FROM '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/seeds/taxi_zone_lookup.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m14:05:51.622036 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m14:05:51.622817 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.taxi_rides_ny.taxi_zone_lookup"
+[0m14:05:51.624808 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: COMMIT
+[0m14:05:51.625321 [debug] [Thread-1 (]: Using duckdb connection "seed.taxi_rides_ny.taxi_zone_lookup"
+[0m14:05:51.625872 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: COMMIT
+[0m14:05:51.627930 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:05:51.628885 [debug] [Thread-1 (]: On seed.taxi_rides_ny.taxi_zone_lookup: Close
+[0m14:05:51.629525 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134066d0>]}
+[0m14:05:51.630168 [info ] [Thread-1 (]: 5 of 16 OK loaded seed file main.taxi_zone_lookup .............................. [[32mINSERT 265[0m in 0.03s]
+[0m14:05:51.630927 [debug] [Thread-1 (]: Finished running node seed.taxi_rides_ny.taxi_zone_lookup
+[0m14:05:51.631444 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.int_trips_unioned
+[0m14:05:51.631966 [info ] [Thread-1 (]: 6 of 16 SKIP relation main.int_trips_unioned ................................... [[33mSKIP[0m]
+[0m14:05:51.632660 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.int_trips_unioned
+[0m14:05:51.633127 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.int_trips_unioned' to be skipped because of status 'skipped'. 
+[0m14:05:51.633778 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_locations
+[0m14:05:51.634491 [info ] [Thread-1 (]: 7 of 16 START sql table model main.dim_locations ............................... [RUN]
+[0m14:05:51.635081 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.taxi_rides_ny.taxi_zone_lookup, now model.taxi_rides_ny.dim_locations)
+[0m14:05:51.635570 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.dim_locations
+[0m14:05:51.638703 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.dim_locations"
+[0m14:05:51.639640 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.dim_locations
+[0m14:05:51.643527 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.dim_locations"
+[0m14:05:51.644504 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:05:51.644976 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: BEGIN
+[0m14:05:51.645426 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:05:51.646419 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.646955 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:05:51.647468 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."dim_locations__dbt_tmp"
+  
+    as (
+      with taxi_zone_lookup as (
+    select * from "dev"."main"."taxi_zone_lookup"
+),
+renamed as (
+    select 
+        locationid as location_id,
+        borough,
+        zone,
+        service_zone
+    from taxi_zone_lookup
+)
+
+select * from renamed
+    );
+  
+  
+[0m14:05:51.649534 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.650938 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:05:51.651432 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'dim_locations'
+  
+[0m14:05:51.653077 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.654909 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:05:51.655465 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'dim_locations'
+  
+[0m14:05:51.656957 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.660829 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:05:51.661370 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+alter table "dev"."main"."dim_locations" rename to "dim_locations__dbt_backup"
+[0m14:05:51.662348 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:05:51.666044 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:05:51.666578 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+alter table "dev"."main"."dim_locations__dbt_tmp" rename to "dim_locations"
+[0m14:05:51.667462 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:05:51.669192 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: COMMIT
+[0m14:05:51.669708 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:05:51.670186 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: COMMIT
+[0m14:05:51.671813 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.674462 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:05:51.674987 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+
+      drop table if exists "dev"."main"."dim_locations__dbt_backup" cascade
+    
+[0m14:05:51.676301 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:05:51.678038 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: Close
+[0m14:05:51.678742 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ac174eec-9c7e-40da-b4c8-4eabfdae3bd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1128eb380>]}
+[0m14:05:51.679547 [info ] [Thread-1 (]: 7 of 16 OK created sql table model main.dim_locations .......................... [[32mOK[0m in 0.04s]
+[0m14:05:51.680354 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_locations
+[0m14:05:51.680904 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_vendors
+[0m14:05:51.681448 [info ] [Thread-1 (]: 8 of 16 SKIP relation main.dim_vendors ......................................... [[33mSKIP[0m]
+[0m14:05:51.682125 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_vendors
+[0m14:05:51.682662 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.int_trips
+[0m14:05:51.683191 [info ] [Thread-1 (]: 9 of 16 SKIP relation main.int_trips ........................................... [[33mSKIP[0m]
+[0m14:05:51.683775 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.int_trips
+[0m14:05:51.684267 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.dim_vendors' to be skipped because of status 'skipped'. 
+[0m14:05:51.684772 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.int_trips' to be skipped because of status 'skipped'. 
+[0m14:05:51.686119 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.accepted_values_int_trips_service_type__Green__Yellow.c251a1899e
+[0m14:05:51.686808 [info ] [Thread-1 (]: 10 of 16 SKIP test accepted_values_int_trips_service_type__Green__Yellow ....... [[33mSKIP[0m]
+[0m14:05:51.687480 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.accepted_values_int_trips_service_type__Green__Yellow.c251a1899e
+[0m14:05:51.688039 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.not_null_int_trips_pickup_datetime.e4fa5f3e09
+[0m14:05:51.688528 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.accepted_values_int_trips_service_type__Green__Yellow.c251a1899e' to be skipped because of status 'skipped'. 
+[0m14:05:51.689064 [info ] [Thread-1 (]: 11 of 16 SKIP test not_null_int_trips_pickup_datetime .......................... [[33mSKIP[0m]
+[0m14:05:51.689849 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.not_null_int_trips_pickup_datetime.e4fa5f3e09
+[0m14:05:51.690405 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.not_null_int_trips_service_type.f38e150f53
+[0m14:05:51.690938 [info ] [Thread-1 (]: 12 of 16 SKIP test not_null_int_trips_service_type ............................. [[33mSKIP[0m]
+[0m14:05:51.691455 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.not_null_int_trips_pickup_datetime.e4fa5f3e09' to be skipped because of status 'skipped'. 
+[0m14:05:51.692096 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.not_null_int_trips_service_type.f38e150f53
+[0m14:05:51.693450 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.not_null_int_trips_total_amount.ec933efa9b
+[0m14:05:51.694116 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.not_null_int_trips_service_type.f38e150f53' to be skipped because of status 'skipped'. 
+[0m14:05:51.694967 [info ] [Thread-1 (]: 13 of 16 SKIP test not_null_int_trips_total_amount ............................. [[33mSKIP[0m]
+[0m14:05:51.695832 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.not_null_int_trips_total_amount.ec933efa9b
+[0m14:05:51.696393 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.not_null_int_trips_trip_id.9edd5fee61
+[0m14:05:51.696930 [info ] [Thread-1 (]: 14 of 16 SKIP test not_null_int_trips_trip_id .................................. [[33mSKIP[0m]
+[0m14:05:51.697439 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.not_null_int_trips_total_amount.ec933efa9b' to be skipped because of status 'skipped'. 
+[0m14:05:51.697969 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.not_null_int_trips_trip_id.9edd5fee61
+[0m14:05:51.698619 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.not_null_int_trips_vendor_id.c9ac94714c
+[0m14:05:51.699151 [info ] [Thread-1 (]: 15 of 16 SKIP test not_null_int_trips_vendor_id ................................ [[33mSKIP[0m]
+[0m14:05:51.699647 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.not_null_int_trips_trip_id.9edd5fee61' to be skipped because of status 'skipped'. 
+[0m14:05:51.700205 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.not_null_int_trips_vendor_id.c9ac94714c
+[0m14:05:51.700853 [debug] [Thread-1 (]: Began running node test.taxi_rides_ny.unique_int_trips_trip_id.37d69d814f
+[0m14:05:51.701428 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.not_null_int_trips_vendor_id.c9ac94714c' to be skipped because of status 'skipped'. 
+[0m14:05:51.701960 [info ] [Thread-1 (]: 16 of 16 SKIP test unique_int_trips_trip_id .................................... [[33mSKIP[0m]
+[0m14:05:51.702649 [debug] [Thread-1 (]: Finished running node test.taxi_rides_ny.unique_int_trips_trip_id.37d69d814f
+[0m14:05:51.703134 [debug] [Thread-4 (]: Marking all children of 'test.taxi_rides_ny.unique_int_trips_trip_id.37d69d814f' to be skipped because of status 'skipped'. 
+[0m14:05:51.704708 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:05:51.705215 [debug] [MainThread]: On master: BEGIN
+[0m14:05:51.705635 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:05:51.706468 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:05:51.707046 [debug] [MainThread]: On master: COMMIT
+[0m14:05:51.707506 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:05:51.707994 [debug] [MainThread]: On master: COMMIT
+[0m14:05:51.709168 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:05:51.709696 [debug] [MainThread]: On master: Close
+[0m14:05:51.710309 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:05:51.710723 [debug] [MainThread]: Connection 'model.taxi_rides_ny.dim_locations' was properly closed.
+[0m14:05:51.711278 [info ] [MainThread]: 
+[0m14:05:51.711757 [info ] [MainThread]: Finished running 2 seeds, 5 table models, 7 data tests, 2 view models in 0 hours 0 minutes and 0.62 seconds (0.62s).
+[0m14:05:51.714090 [debug] [MainThread]: Command end result
+[0m14:05:51.753527 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/manifest.json
+[0m14:05:51.758268 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/semantic_manifest.json
+[0m14:05:51.766350 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/run_results.json
+[0m14:05:51.766817 [info ] [MainThread]: 
+[0m14:05:51.767318 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m14:05:51.767754 [info ] [MainThread]: 
+[0m14:05:51.768293 [error] [MainThread]: [31mFailure in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)[0m
+[0m14:05:51.768813 [error] [MainThread]:   Runtime Error in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:05:51.769224 [info ] [MainThread]: 
+[0m14:05:51.769720 [info ] [MainThread]:   compiled code at target/compiled/taxi_rides_ny/models/staging/stg_green_tripdata.sql
+[0m14:05:51.770134 [info ] [MainThread]: 
+[0m14:05:51.770768 [error] [MainThread]: [31mFailure in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)[0m
+[0m14:05:51.771335 [error] [MainThread]:   Runtime Error in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:05:51.771748 [info ] [MainThread]: 
+[0m14:05:51.772338 [info ] [MainThread]:   compiled code at target/compiled/taxi_rides_ny/models/staging/stg_yellow_tripdata.sql
+[0m14:05:51.772770 [info ] [MainThread]: 
+[0m14:05:51.773300 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=2 SKIP=10 NO-OP=0 TOTAL=16
+[0m14:05:51.776184 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 2.469107, "process_in_blocks": "0", "process_kernel_time": 0.580405, "process_mem_max_rss": "147738624", "process_out_blocks": "0", "process_user_time": 3.639029}
+[0m14:05:51.776845 [debug] [MainThread]: Command `dbt build` failed at 14:05:51.776698 after 2.47 seconds
+[0m14:05:51.777456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111fcda30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11346e2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d82330>]}
+[0m14:05:51.777983 [debug] [MainThread]: Flushing usage events
+[0m14:05:53.985031 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:06:18.821867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d378440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2eb890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2eb9d0>]}
+
+
+============================== 14:06:18.827667 | 6bd13e34-6ef2-45e6-a3b3-6bf2cb299407 ==============================
+[0m14:06:18.827667 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:06:18.828423 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/logs', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt clean', 'version_check': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'target_path': 'None', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'quiet': 'False', 'fail_fast': 'False', 'introspect': 'True', 'log_format': 'default', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'write_json': 'True', 'use_colors': 'True', 'profiles_dir': '/Users/khanhdang/.dbt', 'static_parser': 'True', 'partial_parse': 'True', 'printer_width': '80'}
+[0m14:06:18.997985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6bd13e34-6ef2-45e6-a3b3-6bf2cb299407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d5a5220>]}
+[0m14:06:19.019923 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.27346453, "process_in_blocks": "0", "process_kernel_time": 0.263291, "process_mem_max_rss": "103075840", "process_out_blocks": "0", "process_user_time": 1.738823}
+[0m14:06:19.020693 [debug] [MainThread]: Command `dbt clean` succeeded at 14:06:19.020525 after 0.27 seconds
+[0m14:06:19.021213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e17e140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e17e030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4f8450>]}
+[0m14:06:19.021711 [debug] [MainThread]: Flushing usage events
+[0m14:06:21.273154 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:06:25.530728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db54440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eacf890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eacf9d0>]}
+
+
+============================== 14:06:25.536555 | 8ec29199-3ea7-4e5d-b8d9-ae4ed332d94e ==============================
+[0m14:06:25.536555 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:06:25.537323 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'warn_error': 'None', 'empty': 'None', 'printer_width': '80', 'target_path': 'None', 'static_parser': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'use_colors': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'write_json': 'True', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'log_path': '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/logs', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'profiles_dir': '/Users/khanhdang/.dbt', 'introspect': 'True', 'use_experimental_parser': 'False', 'debug': 'False'}
+[0m14:06:25.553607 [info ] [MainThread]: dbt version: 1.11.4
+[0m14:06:25.554159 [info ] [MainThread]: python version: 3.13.6
+[0m14:06:25.554591 [info ] [MainThread]: python path: /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/.venv/bin/python3.13
+[0m14:06:25.555007 [info ] [MainThread]: os info: macOS-14.6.1-x86_64-i386-64bit-Mach-O
+[0m14:06:25.705227 [info ] [MainThread]: Using profiles dir at /Users/khanhdang/.dbt
+[0m14:06:25.705778 [info ] [MainThread]: Using profiles.yml file at /Users/khanhdang/.dbt/profiles.yml
+[0m14:06:25.706140 [info ] [MainThread]: Using dbt_project.yml file at /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/dbt_project.yml
+[0m14:06:25.708955 [info ] [MainThread]: adapter type: duckdb
+[0m14:06:25.709333 [info ] [MainThread]: adapter version: 1.10.0
+[0m14:06:25.849710 [info ] [MainThread]: Configuration:
+[0m14:06:25.850279 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:06:25.850767 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:06:25.851171 [info ] [MainThread]: Required dependencies:
+[0m14:06:25.851729 [debug] [MainThread]: Executing "git --help"
+[0m14:06:25.868481 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:06:25.869747 [debug] [MainThread]: STDERR: "b''"
+[0m14:06:25.870237 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:06:25.870792 [info ] [MainThread]: Connection:
+[0m14:06:25.871330 [info ] [MainThread]:   database: dev
+[0m14:06:25.871752 [info ] [MainThread]:   schema: main
+[0m14:06:25.872216 [info ] [MainThread]:   path: dev.duckdb
+[0m14:06:25.872697 [info ] [MainThread]:   config_options: None
+[0m14:06:25.873106 [info ] [MainThread]:   extensions: None
+[0m14:06:25.873532 [info ] [MainThread]:   settings: {}
+[0m14:06:25.874098 [info ] [MainThread]:   external_root: .
+[0m14:06:25.874930 [info ] [MainThread]:   use_credential_provider: None
+[0m14:06:25.875622 [info ] [MainThread]:   attach: None
+[0m14:06:25.876116 [info ] [MainThread]:   filesystems: None
+[0m14:06:25.876888 [info ] [MainThread]:   remote: None
+[0m14:06:25.877765 [info ] [MainThread]:   plugins: None
+[0m14:06:25.878796 [info ] [MainThread]:   disable_transactions: False
+[0m14:06:25.879975 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:06:26.047474 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m14:06:26.095001 [debug] [MainThread]: Using duckdb connection "debug"
+[0m14:06:26.095455 [debug] [MainThread]: On debug: select 1 as id
+[0m14:06:26.095781 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:06:26.112289 [debug] [MainThread]: SQL status: OK in 0.016 seconds
+[0m14:06:26.113536 [debug] [MainThread]: On debug: Close
+[0m14:06:26.114039 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:06:26.114516 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:06:26.116279 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.66657543, "process_in_blocks": "0", "process_kernel_time": 0.356613, "process_mem_max_rss": "124456960", "process_out_blocks": "0", "process_user_time": 1.942801}
+[0m14:06:26.116965 [debug] [MainThread]: Command `dbt debug` succeeded at 14:06:26.116807 after 0.67 seconds
+[0m14:06:26.117441 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:06:26.117944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ed04640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10edb31d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebc5d00>]}
+[0m14:06:26.118534 [debug] [MainThread]: Flushing usage events
+[0m14:06:28.930533 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:06:33.969570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11286c440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1137ef890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1137ef9d0>]}
+
+
+============================== 14:06:33.975290 | bbd19fe6-7c68-4080-a29d-7c73127de268 ==============================
+[0m14:06:33.975290 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:06:33.976055 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_format': 'default', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'no_print': 'None', 'fail_fast': 'False', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'log_path': '/Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/logs', 'quiet': 'False', 'write_json': 'True', 'profiles_dir': '/Users/khanhdang/.dbt', 'static_parser': 'True', 'printer_width': '80', 'empty': 'False', 'log_cache_events': 'False', 'target_path': 'None', 'partial_parse': 'True'}
+[0m14:06:34.237440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112aa1220>]}
+[0m14:06:34.301468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113677ce0>]}
+[0m14:06:34.303086 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:06:34.428845 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:06:34.429736 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:06:34.430130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1138c1b50>]}
+[0m14:06:36.154032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113d1e3f0>]}
+[0m14:06:36.247522 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/manifest.json
+[0m14:06:36.249262 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/semantic_manifest.json
+[0m14:06:36.270733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114177690>]}
+[0m14:06:36.271326 [info ] [MainThread]: Found 8 models, 2 seeds, 7 data tests, 2 sources, 475 macros
+[0m14:06:36.271789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11431fee0>]}
+[0m14:06:36.274560 [info ] [MainThread]: 
+[0m14:06:36.275113 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:06:36.275533 [info ] [MainThread]: 
+[0m14:06:36.276141 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:06:36.282580 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m14:06:36.347719 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m14:06:36.348233 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m14:06:36.348643 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:06:36.367746 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m14:06:36.369496 [debug] [ThreadPool]: On list_dev: Close
+[0m14:06:36.370326 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m14:06:36.370924 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m14:06:36.378540 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:06:36.379030 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m14:06:36.379450 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:06:36.380741 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:06:36.382339 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:06:36.382755 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m14:06:36.383408 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:06:36.383810 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:06:36.384207 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m14:06:36.384919 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:06:36.385973 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m14:06:36.386395 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:06:36.386799 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m14:06:36.387439 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:06:36.387867 [debug] [ThreadPool]: On create_dev_main: Close
+[0m14:06:36.389901 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dev_main, now list_dev_main)
+[0m14:06:36.396274 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m14:06:36.399626 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m14:06:36.400039 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:06:36.400847 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:06:36.401272 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m14:06:36.401700 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m14:06:36.422207 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m14:06:36.424085 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m14:06:36.425351 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m14:06:36.425807 [debug] [ThreadPool]: On list_dev_main: Close
+[0m14:06:36.427403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1143265d0>]}
+[0m14:06:36.427975 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:06:36.428384 [debug] [MainThread]: On master: BEGIN
+[0m14:06:36.428782 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:06:36.429541 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:06:36.429975 [debug] [MainThread]: On master: COMMIT
+[0m14:06:36.430455 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:06:36.430872 [debug] [MainThread]: On master: COMMIT
+[0m14:06:36.431557 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:06:36.431985 [debug] [MainThread]: On master: Close
+[0m14:06:36.434275 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_locations
+[0m14:06:36.434950 [info ] [Thread-1 (]: 1 of 7 START sql table model main.dim_locations ................................ [RUN]
+[0m14:06:36.435542 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now model.taxi_rides_ny.dim_locations)
+[0m14:06:36.436021 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.dim_locations
+[0m14:06:36.444706 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.dim_locations"
+[0m14:06:36.446049 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.dim_locations
+[0m14:06:36.488072 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.dim_locations"
+[0m14:06:36.489507 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:06:36.489997 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: BEGIN
+[0m14:06:36.490447 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:06:36.491297 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.491758 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:06:36.492225 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."dim_locations__dbt_tmp"
+  
+    as (
+      with taxi_zone_lookup as (
+    select * from "dev"."main"."taxi_zone_lookup"
+),
+renamed as (
+    select 
+        locationid as location_id,
+        borough,
+        zone,
+        service_zone
+    from taxi_zone_lookup
+)
+
+select * from renamed
+    );
+  
+  
+[0m14:06:36.494386 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:06:36.501166 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:06:36.501661 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'dim_locations'
+  
+[0m14:06:36.502840 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.504387 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:06:36.504867 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'dim_locations'
+  
+[0m14:06:36.506048 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.512975 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:06:36.513442 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+alter table "dev"."main"."dim_locations" rename to "dim_locations__dbt_backup"
+[0m14:06:36.514254 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:06:36.517513 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:06:36.517962 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+alter table "dev"."main"."dim_locations__dbt_tmp" rename to "dim_locations"
+[0m14:06:36.518687 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:06:36.533581 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: COMMIT
+[0m14:06:36.533954 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:06:36.534283 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: COMMIT
+[0m14:06:36.535680 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.540396 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.dim_locations"
+[0m14:06:36.540753 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.dim_locations"} */
+
+      drop table if exists "dev"."main"."dim_locations__dbt_backup" cascade
+    
+[0m14:06:36.541709 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.543783 [debug] [Thread-1 (]: On model.taxi_rides_ny.dim_locations: Close
+[0m14:06:36.545253 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114248890>]}
+[0m14:06:36.545924 [info ] [Thread-1 (]: 1 of 7 OK created sql table model main.dim_locations ........................... [[32mOK[0m in 0.11s]
+[0m14:06:36.546495 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_locations
+[0m14:06:36.546975 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.fct_trips
+[0m14:06:36.547740 [info ] [Thread-1 (]: 2 of 7 START sql table model main.fct_trips .................................... [RUN]
+[0m14:06:36.548186 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.dim_locations, now model.taxi_rides_ny.fct_trips)
+[0m14:06:36.548543 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.fct_trips
+[0m14:06:36.550283 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.fct_trips"
+[0m14:06:36.550935 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.fct_trips
+[0m14:06:36.553530 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.fct_trips"
+[0m14:06:36.554321 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:06:36.554703 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: BEGIN
+[0m14:06:36.555047 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:06:36.555726 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.556095 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:06:36.556485 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."fct_trips__dbt_tmp"
+  
+    as (
+      /*To do:
+- one row per trip (does not matter if yellow or green)
+- add a primary key (trip_id) to the fact table. it has to be unique
+- find all the duplicates. understand why they are duplicates and how to fix them.
+- find a way to enrich the column payment_type*/
+
+select 1
+    );
+  
+  
+[0m14:06:36.557369 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:06:36.558870 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:06:36.559497 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_trips'
+  
+[0m14:06:36.560666 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.562254 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:06:36.562768 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_trips'
+  
+[0m14:06:36.564192 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.568163 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:06:36.568677 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+alter table "dev"."main"."fct_trips" rename to "fct_trips__dbt_backup"
+[0m14:06:36.569550 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:06:36.572558 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:06:36.573031 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+alter table "dev"."main"."fct_trips__dbt_tmp" rename to "fct_trips"
+[0m14:06:36.573813 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:06:36.575466 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: COMMIT
+[0m14:06:36.575942 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:06:36.576391 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: COMMIT
+[0m14:06:36.577521 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.580088 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.fct_trips"
+[0m14:06:36.580645 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.fct_trips"} */
+
+      drop table if exists "dev"."main"."fct_trips__dbt_backup" cascade
+    
+[0m14:06:36.581797 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.583428 [debug] [Thread-1 (]: On model.taxi_rides_ny.fct_trips: Close
+[0m14:06:36.584114 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1146cb610>]}
+[0m14:06:36.584890 [info ] [Thread-1 (]: 2 of 7 OK created sql table model main.fct_trips ............................... [[32mOK[0m in 0.04s]
+[0m14:06:36.585650 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.fct_trips
+[0m14:06:36.586182 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.stg_green_tripdata
+[0m14:06:36.586768 [info ] [Thread-1 (]: 3 of 7 START sql view model main.stg_green_tripdata ............................ [RUN]
+[0m14:06:36.587396 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.fct_trips, now model.taxi_rides_ny.stg_green_tripdata)
+[0m14:06:36.587895 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.stg_green_tripdata
+[0m14:06:36.591490 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:06:36.592542 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.stg_green_tripdata
+[0m14:06:36.615332 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:06:36.616551 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:06:36.617074 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: BEGIN
+[0m14:06:36.617543 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:06:36.618406 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.618882 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_green_tripdata"
+[0m14:06:36.619387 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_green_tripdata"} */
+
+  
+  create view "dev"."main"."stg_green_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(lpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(lpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    cast(trip_type as int) as trip_type,
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    cast(ehail_fee as numeric) as ehail_fee,
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."green_tripdata"
+where vendorid is not null
+  );
+
+[0m14:06:36.620673 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_green_tripdata"} */
+
+  
+  create view "dev"."main"."stg_green_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(lpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(lpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    cast(trip_type as int) as trip_type,
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    cast(ehail_fee as numeric) as ehail_fee,
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."green_tripdata"
+where vendorid is not null
+  );
+
+[0m14:06:36.621215 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:06:36.621816 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: ROLLBACK
+[0m14:06:36.629434 [debug] [Thread-1 (]: Failed to rollback 'model.taxi_rides_ny.stg_green_tripdata'
+[0m14:06:36.629935 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_green_tripdata: Close
+[0m14:06:36.635122 [debug] [Thread-1 (]: Runtime Error in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:06:36.635693 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11457a050>]}
+[0m14:06:36.636432 [error] [Thread-1 (]: 3 of 7 ERROR creating sql view model main.stg_green_tripdata ................... [[31mERROR[0m in 0.05s]
+[0m14:06:36.637198 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.stg_green_tripdata
+[0m14:06:36.637709 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:06:36.638278 [info ] [Thread-1 (]: 4 of 7 START sql view model main.stg_yellow_tripdata ........................... [RUN]
+[0m14:06:36.638879 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_rides_ny.stg_green_tripdata, now model.taxi_rides_ny.stg_yellow_tripdata)
+[0m14:06:36.639352 [debug] [Thread-1 (]: Began compiling node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:06:36.642336 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:06:36.643084 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.stg_green_tripdata' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!.
+[0m14:06:36.644831 [debug] [Thread-1 (]: Began executing node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:06:36.648071 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:06:36.648914 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:06:36.649383 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: BEGIN
+[0m14:06:36.649833 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:06:36.650655 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:06:36.651113 [debug] [Thread-1 (]: Using duckdb connection "model.taxi_rides_ny.stg_yellow_tripdata"
+[0m14:06:36.651613 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_yellow_tripdata"} */
+
+  
+  create view "dev"."main"."stg_yellow_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(tpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(tpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    1 as trip_type, -- yellow taxis can only be street-hail, so we set trip_type to 1 for all records in yellow_tripdata
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    0 as ehail_fee, -- this column is only for green_tripdata, so we set it to 0 for yellow_tripdata
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."yellow_tripdata"
+where vendorid is not null
+  );
+
+[0m14:06:36.652741 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "taxi_rides_ny", "target_name": "dev", "node_id": "model.taxi_rides_ny.stg_yellow_tripdata"} */
+
+  
+  create view "dev"."main"."stg_yellow_tripdata__dbt_tmp" as (
+    select 
+    -- identifiers
+    cast(vendorid as int) as vendor_id,
+    cast(ratecodeid as int) as rate_code_id,
+    cast(pulocationid as int) as pickup_location_id,
+    cast(dolocationid as int) as dropoff_location_id,
+
+    -- timestamps
+    cast(tpep_pickup_datetime as datetime) as pickup_datetime,
+    cast(tpep_dropoff_datetime as datetime) as dropoff_datetime,
+    
+    -- trip info
+    store_and_fwd_flag,
+    cast(passenger_count as int) as passenger_count,
+    cast(trip_distance as float) as trip_distance,
+    1 as trip_type, -- yellow taxis can only be street-hail, so we set trip_type to 1 for all records in yellow_tripdata
+
+    -- payment info
+    cast(fare_amount as numeric) as fare_amount,
+    cast(extra as numeric) as extra,
+    cast(mta_tax as numeric) as mrta_tax,
+    cast(tip_amount as numeric) as tip_amount,
+    cast(tolls_amount as numeric) as tolls_amount,
+    0 as ehail_fee, -- this column is only for green_tripdata, so we set it to 0 for yellow_tripdata
+    cast(improvement_surcharge as numeric) as improvement_surcharge,
+    cast(total_amount as numeric) as total_amount,
+    cast(payment_type as int) as payment_type
+
+from "taxi_rides_ny"."prod"."yellow_tripdata"
+where vendorid is not null
+  );
+
+[0m14:06:36.653261 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:06:36.653805 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: ROLLBACK
+[0m14:06:36.659845 [debug] [Thread-1 (]: Failed to rollback 'model.taxi_rides_ny.stg_yellow_tripdata'
+[0m14:06:36.660412 [debug] [Thread-1 (]: On model.taxi_rides_ny.stg_yellow_tripdata: Close
+[0m14:06:36.665522 [debug] [Thread-1 (]: Runtime Error in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:06:36.666187 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bbd19fe6-7c68-4080-a29d-7c73127de268', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1146ddef0>]}
+[0m14:06:36.667109 [error] [Thread-1 (]: 4 of 7 ERROR creating sql view model main.stg_yellow_tripdata .................. [[31mERROR[0m in 0.03s]
+[0m14:06:36.667912 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.stg_yellow_tripdata
+[0m14:06:36.668655 [debug] [Thread-4 (]: Marking all children of 'model.taxi_rides_ny.stg_yellow_tripdata' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!.
+[0m14:06:36.669567 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.int_trips_unioned
+[0m14:06:36.670169 [info ] [Thread-1 (]: 5 of 7 SKIP relation main.int_trips_unioned .................................... [[33mSKIP[0m]
+[0m14:06:36.670759 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.int_trips_unioned
+[0m14:06:36.671558 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.dim_vendors
+[0m14:06:36.672064 [info ] [Thread-1 (]: 6 of 7 SKIP relation main.dim_vendors .......................................... [[33mSKIP[0m]
+[0m14:06:36.672600 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.dim_vendors
+[0m14:06:36.673212 [debug] [Thread-1 (]: Began running node model.taxi_rides_ny.int_trips
+[0m14:06:36.673711 [info ] [Thread-1 (]: 7 of 7 SKIP relation main.int_trips ............................................ [[33mSKIP[0m]
+[0m14:06:36.674314 [debug] [Thread-1 (]: Finished running node model.taxi_rides_ny.int_trips
+[0m14:06:36.675923 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:06:36.676484 [debug] [MainThread]: On master: BEGIN
+[0m14:06:36.676905 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:06:36.677715 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:06:36.678146 [debug] [MainThread]: On master: COMMIT
+[0m14:06:36.678559 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:06:36.678952 [debug] [MainThread]: On master: COMMIT
+[0m14:06:36.679675 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:06:36.680258 [debug] [MainThread]: On master: Close
+[0m14:06:36.680815 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:06:36.681207 [debug] [MainThread]: Connection 'model.taxi_rides_ny.stg_yellow_tripdata' was properly closed.
+[0m14:06:36.681723 [info ] [MainThread]: 
+[0m14:06:36.682196 [info ] [MainThread]: Finished running 5 table models, 2 view models in 0 hours 0 minutes and 0.41 seconds (0.41s).
+[0m14:06:36.683962 [debug] [MainThread]: Command end result
+[0m14:06:36.716911 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/manifest.json
+[0m14:06:36.719874 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/semantic_manifest.json
+[0m14:06:36.730250 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/khanhdang/Documents/Self-learn/DataEngZoomcamp/data-engineer-zoomcamp-hw/W4_dbt/homework/dbt/taxi_rides_ny/target/run_results.json
+[0m14:06:36.730994 [info ] [MainThread]: 
+[0m14:06:36.732020 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m14:06:36.732896 [info ] [MainThread]: 
+[0m14:06:36.733828 [error] [MainThread]: [31mFailure in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)[0m
+[0m14:06:36.734722 [error] [MainThread]:   Runtime Error in model stg_green_tripdata (models/staging/stg_green_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:06:36.735462 [info ] [MainThread]: 
+[0m14:06:36.736234 [info ] [MainThread]:   compiled code at target/compiled/taxi_rides_ny/models/staging/stg_green_tripdata.sql
+[0m14:06:36.737068 [info ] [MainThread]: 
+[0m14:06:36.738061 [error] [MainThread]: [31mFailure in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)[0m
+[0m14:06:36.738832 [error] [MainThread]:   Runtime Error in model stg_yellow_tripdata (models/staging/stg_yellow_tripdata.sql)
+  Binder Error: Catalog "taxi_rides_ny" does not exist!
+[0m14:06:36.739411 [info ] [MainThread]: 
+[0m14:06:36.740296 [info ] [MainThread]:   compiled code at target/compiled/taxi_rides_ny/models/staging/stg_yellow_tripdata.sql
+[0m14:06:36.741022 [info ] [MainThread]: 
+[0m14:06:36.741549 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=2 SKIP=3 NO-OP=0 TOTAL=7
+[0m14:06:36.744374 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.8497136, "process_in_blocks": "0", "process_kernel_time": 0.389224, "process_mem_max_rss": "146149376", "process_out_blocks": "0", "process_user_time": 4.094334}
+[0m14:06:36.745251 [debug] [MainThread]: Command `dbt run` failed at 14:06:36.745041 after 2.85 seconds
+[0m14:06:36.746177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1136bdf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1147a3bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1147a3a10>]}
+[0m14:06:36.746930 [debug] [MainThread]: Flushing usage events
+[0m14:06:39.566862 [debug] [MainThread]: An error was encountered while trying to flush usage events

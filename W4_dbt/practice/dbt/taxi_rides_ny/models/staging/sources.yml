@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: >
+      Raw NYC taxi trip data loaded from BigQuery external tables.
+      Contains both yellow and green taxi trip records for 2019-2020.
+    description: "The raw data from the taxi rides in New York"
+    database: taxi_rides_ny
+    schema: prod
+    
+    tables:
+      - name: green_tripdata
+        description: |
+          A code indicating the provider associated with the trip record.
+            1: 'Creative Mobile Technologies, LLC'
+            2: 'VeriFone Inc.'
+            3: 'Fleetmatics Data Technologies, Inc.'
+            4: 'Unknown/ Other'
+        data_type: integer
+        meta:
+          pii: false
+          ownership: data_team
+          importance: high
+          format: none
+      - name: yellow_tripdata
+        description: Yellow taxi trips, primarily from Manhattan

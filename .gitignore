@@ -1,9 +1,66 @@
+# ========================
+# Data files
+# ========================
 *.parquet
-pipeline/.env_encoded
-pipeline/service-account.json
-W2_kestra/service-account.json
-W2_kestra/.env_encoded
-W1_docker_terraform_pgadmin/practice_homework_docker_pgadmin/pipeline/.env_encoded
-W1_docker_terraform_pgadmin/practice_homework_docker_pgadmin/pipeline/.ipynb_checkpoints
-W1_docker_terraform_pgadmin/practice_terraform/keys/my-creds.json
-W1_docker_terraform_pgadmin/practice_homework_docker_pgadmin/pipeline/service-account.json
+*.csv
+*.jsonl
+
+# ========================
+# Secrets & credentials
+# ========================
+.env
+.env.*
+*.env_encoded
+service-account.json
+*service_account*.json
+*creds*.json
+*credentials*.json
+keys/
+*.pem
+*.key
+*.msgpack
+
+
+# ========================
+# Terraform
+# ========================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+
+# ========================
+# Jupyter
+# ========================
+.ipynb_checkpoints/
+
+# ========================
+# dbt
+# ========================
+target/
+dbt_packages/
+logs/
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ========================
+# OS / IDE
+# ========================
+.DS_Store
+.vscode/
+.idea/
+
+# ========================
+# Log files and build artifacts
+# ========================
+logs/
+target/
+*.duckdb
