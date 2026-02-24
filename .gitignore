@@ -41,7 +41,7 @@ override.tf.json
 # ========================
 target/
 dbt_packages/
-logs/
+*.log
 
 # ========================
 # Python
@@ -64,3 +64,11 @@ venv/
 logs/
 target/
 *.duckdb
+
+.bruin.yml
+logs/runs
+logs/*.log
+*.py[cod]
+*.db
+*.log
+/target
