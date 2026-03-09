@@ -3,7 +3,11 @@
 # ========================
 *.parquet
 *.csv
-*.jsonl
+*.json
+data
+fhvhv/
+*.jar
+*.gz
 
 # ========================
 # Secrets & credentials
@@ -64,11 +68,11 @@ venv/
 logs/
 target/
 *.duckdb
-
 .bruin.yml
 logs/runs
 logs/*.log
 *.py[cod]
 *.db
 *.log
-/target
+target/
+*.gz/
