@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# In[1]:
+
+
 import argparse
 
 import pyspark
@@ -21,17 +24,46 @@ input_yellow = args.input_yellow
 output = args.output
 
 
+# In[2]:
+
+
 spark = SparkSession.builder \
+    .master("spark://Khanhs-MacBook-Pro.local:7077") \
     .appName('test') \
     .getOrCreate()
 
-df_green = spark.read.parquet(input_green)
+
+# In[3]:
+
+
+spark
+
+
+# In[4]:
+
+
+df_green = spark.read.option("recursiveFileLookup", "true").parquet(
+    input_green
+)
+
+
+# In[5]:
+
 
 df_green = df_green \
     .withColumnRenamed('lpep_pickup_datetime', 'pickup_datetime') \
     .withColumnRenamed('lpep_dropoff_datetime', 'dropoff_datetime')
 
-df_yellow = spark.read.parquet(input_yellow)
+
+# In[6]:
+
+
+df_yellow = spark.read.option("recursiveFileLookup", "true").parquet(
+    input_yellow
+)
+
+
+# In[7]:
 
 
 df_yellow = df_yellow \
@@ -39,46 +71,90 @@ df_yellow = df_yellow \
     .withColumnRenamed('tpep_dropoff_datetime', 'dropoff_datetime')
 
 
-common_colums = [
-    'VendorID',
-    'pickup_datetime',
-    'dropoff_datetime',
-    'store_and_fwd_flag',
-    'RatecodeID',
-    'PULocationID',
-    'DOLocationID',
-    'passenger_count',
-    'trip_distance',
-    'fare_amount',
-    'extra',
-    'mta_tax',
-    'tip_amount',
-    'tolls_amount',
-    'improvement_surcharge',
-    'total_amount',
-    'payment_type',
-    'congestion_surcharge'
-]
+# In[14]:
 
+
+common_columns = []
+
+yellow_columns = set(df_yellow.columns)
+
+for col in df_green.columns:
+    if col in yellow_columns:
+        common_columns.append(col)
+
+
+# In[15]:
+
+
+common_columns
+
+
+# In[16]:
+
+
+df_green.select(common_columns).show()
+
+
+# In[17]:
+
+
+from pyspark.sql import functions as F
+
+
+# In[19]:
 
 
 df_green_sel = df_green \
-    .select(common_colums) \
+    .select(common_columns) \
     .withColumn('service_type', F.lit('green'))
 
+
+# In[20]:
+
+
 df_yellow_sel = df_yellow \
-    .select(common_colums) \
+    .select(common_columns) \
     .withColumn('service_type', F.lit('yellow'))
+
+
+# In[ ]:
 
 
 df_trips_data = df_green_sel.unionAll(df_yellow_sel)
 
+
+# In[ ]:
+
+
+df_trips_data.groupBy('service_type').count().show()
+
+
+# In[ ]:
+
+
 df_trips_data.registerTempTable('trips_data')
+
+
+# In[13]:
+
+
+spark.sql("""
+SELECT
+    service_type,
+    count(1)
+FROM
+    trips_data
+GROUP BY 
+    service_type
+""").show()
+
+
+# In[110]:
 
 
 df_result = spark.sql("""
 SELECT 
-    -- Reveneue grouping 
+    -- Revenue grouping 
     PULocationID AS revenue_zone,
     date_trunc('month', pickup_datetime) AS revenue_month, 
     service_type, 
@@ -94,8 +170,8 @@ SELECT
     SUM(congestion_surcharge) AS revenue_monthly_congestion_surcharge,
 
     -- Additional calculations
-    AVG(passenger_count) AS avg_montly_passenger_count,
-    AVG(trip_distance) AS avg_montly_trip_distance
+    AVG(passenger_count) AS avg_monthly_passenger_count,
+    AVG(trip_distance) AS avg_monthly_trip_distance
 FROM
     trips_data
 GROUP BY
@@ -103,9 +179,9 @@ GROUP BY
 """)
 
 
-df_result.coalesce(1) \
-    .write.parquet(output, mode='overwrite')
+# In[111]:
 
 
+df_result.coalesce(1).write.parquet(output, mode='overwrite')
 
 
