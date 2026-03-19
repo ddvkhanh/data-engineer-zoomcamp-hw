@@ -82,6 +82,8 @@ How many trips have `trip_distance` > 5?
 - 8506
 - 9506
 
+### Answer
+`8506`
 
 ## Part 2: PyFlink (Questions 4-6)
 
@@ -144,6 +146,8 @@ Which `PULocationID` had the most trips in a single 5-minute window?
 - 75
 - 166
 
+### Answer
+`74`
 
 ## Question 5. Session window - longest streak
 
@@ -164,6 +168,9 @@ How many trips were in the longest session?
 - 51
 - 81
 
+### Answer
+`81`
+
 
 ## Question 6. Tumbling window - largest tip
 
@@ -176,3 +183,8 @@ Which hour had the highest total tip amount?
 - 2025-10-16 18:00:00
 - 2025-10-22 08:00:00
 - 2025-10-30 16:00:00
+
+### Answer
+`2025-10-16 18:00:00`
+
+![Q6](./images/q2.png)
